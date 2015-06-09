@@ -1,0 +1,421 @@
+<?xml version="1.0"?>
+<view icon="8990" title="AgentZ_II" width="230" height="270">
+		<control progid="DecalControls.FixedLayout" clipped="">
+			<control progid="DecalControls.Notebook" name="nbMain" left="0" top="0" width="230" height="270">
+			<page label="Stats">
+				<control progid="DecalControls.FixedLayout" clipped="">
+					<control progid="DecalControls.Notebook" name="nbStats" left="0" top="0" width="230" height="270">
+					<page label="XP">
+						<control progid="DecalControls.FixedLayout" clipped="">
+							<control progid="DecalControls.StaticText" name="Char_Name" left="4" top="4" width="96" height="16" text=""/>
+							<control progid="DecalControls.StaticText" name="XP_Total" left="124" top="20" width="100" height="16" justify="Right" text=""/>
+							<control progid="DecalControls.StaticText" name="lblTotalXP" left="4" top="20" width="96" height="16" text="Total XP:"/>
+							<control progid="DecalControls.StaticText" name="lblLevel" left="168" top="4" width="32" height="16" text="Level:"/>
+							<control progid="DecalControls.StaticText" name="Level_Num" left="204" top="4" width="20" height="16" justify="Right" text=""/>
+							<control progid="DecalControls.Progress" name="XP_Bar" left="4" top="36" width="222" height="16" value="0" maxvalue="100" facecolor="1593996" fillcolor="192" textcolor="16777215" bordercolor="0" border="1" align="Left" pretext="XP to next level" posttext="" drawtext="0"/>
+							<control progid="DecalControls.StaticText" name="lblSessionTime" left="4" top="84" width="40" height="12" text="Time:"/>
+							<control progid="DecalControls.StaticText" name="Session_Time" left="52" top="84" width="52" height="12" text="00:00:00"/>
+							<control progid="DecalControls.PushButton" name="Reset_Time" left="192" top="178" width="36" height="16" textcolor="16777215" text="Reset"/>
+							<control progid="DecalControls.StaticText" name="lblXPperhour" left="4" top="114" width="40" height="14" text="XP/Hr:"/>
+							<control progid="DecalControls.StaticText" name="XP_Hour" left="52" top="114" width="72" height="14" text=""/>
+							<control progid="DecalControls.StaticText" name="XP_Min" left="52" top="129" width="72" height="14" text=""/>
+							<control progid="DecalControls.StaticText" name="lblxppermin" left="4" top="129" width="48" height="14" text="XP/Min:"/>
+							<control progid="DecalControls.StaticText" name="lblLastXPChange" left="4" top="144" width="56" height="14" text="Last Xp:"/>
+							<control progid="DecalControls.StaticText" name="XP_Change" left="52" top="144" width="72" height="14" text=""/>
+							<control progid="DecalControls.StaticText" name="lblsessionXP" left="4" top="99" width="36" height="14" text="XP:"/>
+							<control progid="DecalControls.StaticText" name="XP_Session" left="52" top="99" width="72" height="14" text=""/>
+							<control progid="DecalControls.StaticText" name="lblXPtoLevel" left="8" top="37" width="84" height="16" textcolor="16777215" text="Xp to next level"/>
+							<control progid="DecalControls.StaticText" name="aXP_Next" left="148" top="37" width="76" height="16" textcolor="16777215" justify="Right" text=""/>
+							<control progid="DecalControls.StaticText" name="lblunassignedxp" left="4" top="56" width="96" height="16" text="Unassigned XP:"/>
+							<control progid="DecalControls.StaticText" name="XP_Un" left="140" top="56" width="84" height="16" justify="Right" text=""/>
+							<control progid="DecalControls.StaticText" name="Sessionlbl" left="52" top="72" width="48" height="12" textcolor="128" text="Session"/>
+							<control progid="DecalControls.StaticText" name="LoginLbl" left="140" top="72" width="56" height="12" textcolor="128" text="Total"/>
+							<control progid="DecalControls.StaticText" name="Total_Time" left="140" top="84" width="64" height="16" text="00:00:00"/>
+							<control progid="DecalControls.StaticText" name="Total_XP" left="140" top="99" width="78" height="14" text=""/>
+							<control progid="DecalControls.StaticText" name="Total_XP_Hour" left="140" top="114" width="78" height="14" text=""/>
+							<control progid="DecalControls.StaticText" name="Total_XP_Min" left="140" top="129" width="78" height="14" text=""/>
+							<control progid="DecalControls.Checkbox" name="XP_Auto" left="146" top="180" width="42" height="16" text="Auto"/>
+							<control progid="DecalControls.Checkbox" name="XP_Filter" left="4" top="180" width="42" height="16" text="Filter"/>
+							<control progid="DecalControls.Edit" name="XP_Filter_Threshold" left="52" top="178" width="36" height="16" imageportalsrc="4726" text="750"/>
+							<control progid="DecalControls.StaticText" name="5minlbl" left="4" top="159" width="36" height="14" text="5 min:"/>
+							<control progid="DecalControls.StaticText" name="XP_5Min" left="52" top="159" width="72" height="14" text=""/>
+						</control>
+
+					</page>
+					<page label="Lum">
+						<control progid="DecalControls.FixedLayout" clipped="">
+							<control progid="DecalControls.Progress" name="Lum_Bar" left="4" top="20" width="222" height="16" value="0" maxvalue="100" facecolor="1593996" fillcolor="192" textcolor="16777215" bordercolor="0" border="1" align="Left" pretext="XP to next level" posttext="" drawtext="0"/>
+							<control progid="DecalControls.StaticText" name="lblTotalLum" left="4" top="4" width="96" height="16" text="Total Lum:"/>
+							<control progid="DecalControls.StaticText" name="aLum_Total" left="0" top="0" width="0" height="0" textcolor="16777215" justify="Right" text=""/>
+							<control progid="DecalControls.StaticText" name="Sessionlbl2" left="52" top="44" width="48" height="12" textcolor="128" text="Session"/>
+							<control progid="DecalControls.StaticText" name="LoginLbl2" left="140" top="44" width="56" height="12" textcolor="128" text="Total"/>
+							<control progid="DecalControls.StaticText" name="lblSessionTime2" left="4" top="58" width="40" height="12" text="Time:"/>
+							<control progid="DecalControls.StaticText" name="Session_Time2" left="52" top="58" width="52" height="12" text="00:00:00"/>
+							<control progid="DecalControls.StaticText" name="Total_Time2" left="140" top="58" width="64" height="16" text="00:00:00"/>
+							<control progid="DecalControls.StaticText" name="lblsessionLum" left="4" top="74" width="36" height="14" text="Lum:"/>
+							<control progid="DecalControls.StaticText" name="lblLumpermin" left="4" top="106" width="48" height="14" text="Lum/Min:"/>
+							<control progid="DecalControls.StaticText" name="lblLumperhour" left="4" top="90" width="40" height="14" text="Lum/Hr:"/>
+							<control progid="DecalControls.StaticText" name="Session_Lum" left="52" top="74" width="72" height="14" text=""/>
+							<control progid="DecalControls.StaticText" name="Session_Lum_Hour" left="52" top="90" width="72" height="14" text=""/>
+							<control progid="DecalControls.StaticText" name="Session_Lum_Min" left="52" top="106" width="72" height="14" text=""/>
+							<control progid="DecalControls.StaticText" name="Total_Lum" left="140" top="74" width="78" height="14" text=""/>
+							<control progid="DecalControls.StaticText" name="Total_Lum_Hour" left="140" top="90" width="78" height="14" text=""/>
+							<control progid="DecalControls.StaticText" name="Total_Lum_Min" left="140" top="106" width="78" height="14" text=""/>
+							<control progid="DecalControls.StaticText" name="lblLastLumChange" left="4" top="122" width="56" height="14" text="Last Lum:"/>
+							<control progid="DecalControls.StaticText" name="Lum_Change" left="52" top="122" width="72" height="14" text=""/>
+						</control>
+
+					</page>
+					<page label="Kills">
+						<control progid="DecalControls.FixedLayout" clipped="">
+							<control progid="DecalControls.StaticText" name="lblKills" left="140" top="144" width="24" height="14" text="Kills:"/>
+							<control progid="DecalControls.StaticText" name="Kill_Count" left="168" top="144" width="50" height="14" text=""/>
+						</control>
+
+					</page>
+					</control>
+
+				</control>
+
+			</page>
+			<page label="Spells">
+				<control progid="DecalControls.FixedLayout" clipped="">
+					<control progid="DecalControls.Notebook" name="nbspells" left="0" top="0" width="230" height="220">
+					<page label="Buffs">
+						<control progid="DecalControls.FixedLayout" clipped="">
+							<control progid="DecalControls.List" name="Buff_List" left="0" top="0" width="230" height="158">
+								<column progid="DecalControls.IconColumn" fixedwidth="20"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="148"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="60"/>
+							</control>
+							<control progid="DecalControls.Edit" name="Spells_Offset" left="132" top="160" width="30" height="19" imageportalsrc="4726" text="0"/>
+							<control progid="DecalControls.StaticText" name="Spells_Tracked" left="171" top="162" width="42" height="12" text="N/A"/>
+							<control progid="DecalControls.Checkbox" name="Spells_Item" left="4" top="162" width="70" height="16" text="Item Spells"/>
+							<control progid="DecalControls.Checkbox" name="Spells_Beers" left="80" top="162" width="54" height="16" text="Beers"/>
+						</control>
+
+					</page>
+					<page label="Debuffs">
+						<control progid="DecalControls.FixedLayout" clipped="">
+							<control progid="DecalControls.List" name="Debuff_List" left="0" top="0" width="230" height="180">
+								<column progid="DecalControls.IconColumn" fixedwidth="20"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="130"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="60"/>
+							</control>
+						</control>
+
+					</page>
+					</control>
+
+				</control>
+
+			</page>
+			<page label="Corpses">
+				<control progid="DecalControls.FixedLayout" clipped="">
+					<control progid="DecalControls.List" name="Corpses_List" left="0" top="22" width="230" height="152">
+						<column progid="DecalControls.TextColumn" fixedwidth="75"/>
+						<column progid="DecalControls.TextColumn" fixedwidth="75"/>
+						<column progid="DecalControls.TextColumn" fixedwidth="46"/>
+						<column progid="DecalControls.IconColumn" fixedwidth="20"/>
+					</control>
+					<control progid="DecalControls.Checkbox" name="Corpses_Absolute" left="4" top="178" width="98" height="16" text="Absolute Coords"/>
+					<control progid="DecalControls.Checkbox" name="Corpses_Auto" left="104" top="178" width="98" height="16" text="Auto Remove"/>
+					<control progid="DecalControls.Checkbox" name="Corpses_Track" left="4" top="4" width="100" height="16" text="Track Corpses"/>
+				</control>
+
+			</page>
+			<page label="HUD">
+				<control progid="DecalControls.FixedLayout" clipped="">
+					<control progid="DecalControls.Notebook" name="nbHud" left="0" top="0" width="230" height="250">
+					<page label="General">
+						<control progid="DecalControls.FixedLayout" clipped="">
+							<control progid="DecalControls.Checkbox" name="HUD_On" left="4" top="4" width="80" height="12" text="Enable HUD's"/>
+							<control progid="DecalControls.List" name="HUD_General" left="0" top="20" width="230" height="134">
+								<column progid="DecalControls.CheckColumn" fixedwidth="20"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="45"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="50"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="20"/>
+								<column progid="DecalControls.IconColumn" fixedwidth="20"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="40"/>
+								<column progid="DecalControls.CheckColumn" fixedwidth="20"/>
+							</control>
+							<control progid="DecalControls.Choice" name="HUD_General_BG_Color" left="2" top="176" width="112" height="20" selected="0">
+								<option text="White" data="White"/>
+								<option text="Grey" data="Grey"/>
+								<option text="Black" data="Black"/>
+								<option text="Red" data="Red"/>
+								<option text="Light Red" data="Light Red"/>
+								<option text="Blue" data="Blue"/>
+								<option text="Light Blue" data="Light Blue"/>
+								<option text="Turquoise" data="Turquoise"/>
+								<option text="Green" data="Green"/>
+								<option text="Light Green" data="Light Green"/>
+								<option text="Yellow" data="Yellow"/>
+								<option text="Dark Yellow" data="Dark Yellow"/>
+								<option text="Purple" data="Purple"/>
+								<option text="Light Purple" data="Light Purple"/>
+								<option text="Pink" data="Pink"/>
+								<option text="Peach" data="Peach"/>
+								<option text="Orange" data="Orange"/>
+								<option text="Light Orange" data="Light Orange"/>
+							</control>
+							<control progid="DecalControls.Choice" name="HUD_General_BG_Alpha" left="116" top="176" width="112" height="19" selected="5">
+								<option text="0%" data="10"/>
+								<option text="10%" data="9"/>
+								<option text="20%" data="8"/>
+								<option text="30%" data="7"/>
+								<option text="40%" data="6"/>
+								<option text="50%" data="5"/>
+								<option text="60%" data="4"/>
+								<option text="70%" data="3"/>
+								<option text="80%" data="2"/>
+								<option text="90%" data="1"/>
+								<option text="100%" data="0"/>
+							</control>
+							<control progid="DecalControls.Choice" name="HUD_General_Font" left="2" top="156" width="112" height="19" selected="0">
+								<option text="Arial" data="Arial"/>
+								<option text="Courier" data="Courier New"/>
+								<option text="Franklin" data="Franklin Gothic Medium"/>
+								<option text="Impact" data="Impact"/>
+								<option text="Palatino" data="Palatino Linotype"/>
+								<option text="Times" data="Times New Roman"/>
+								<option text="Verdana" data="Verdana"/>
+							</control>
+							<control progid="DecalControls.Choice" name="HUD_General_Size" left="116" top="156" width="112" height="19" selected="0">
+								<option text="10" data="10"/>
+								<option text="12" data="12"/>
+								<option text="14" data="14"/>
+								<option text="16" data="16"/>
+								<option text="18" data="18"/>
+								<option text="20" data="20"/>
+								<option text="22" data="22"/>
+								<option text="24" data="24"/>
+								<option text="26" data="26"/>
+								<option text="28" data="28"/>
+								<option text="30" data="30"/>
+							</control>
+						</control>
+
+					</page>
+					<page label="Clock">
+						<control progid="DecalControls.FixedLayout" clipped="">
+							<control progid="DecalControls.Checkbox" name="HUD_Clock_24" left="4" top="4" width="88" height="16" text="24 Hour Clock"/>
+							<control progid="DecalControls.Checkbox" name="HUD_Clock_Disp" left="134" top="22" width="44" height="16" text="Time"/>
+							<control progid="DecalControls.Choice" name="HUD_Clock_Color" left="104" top="176" width="96" height="20" selected="0">
+								<option text="White" data="White"/>
+								<option text="Grey" data="Grey"/>
+								<option text="Black" data="Black"/>
+								<option text="Red" data="Red"/>
+								<option text="Light Red" data="Light Red"/>
+								<option text="Blue" data="Blue"/>
+								<option text="Light Blue" data="Light Blue"/>
+								<option text="Turquoise" data="Turquoise"/>
+								<option text="Green" data="Green"/>
+								<option text="Light Green" data="Light Green"/>
+								<option text="Yellow" data="Yellow"/>
+								<option text="Dark Yellow" data="Dark Yellow"/>
+								<option text="Purple" data="Purple"/>
+								<option text="Light Purple" data="Light Purple"/>
+								<option text="Pink" data="Pink"/>
+								<option text="Peach" data="Peach"/>
+								<option text="Orange" data="Orange"/>
+								<option text="Light Orange" data="Light Orange"/>
+							</control>
+							<control progid="DecalControls.Checkbox" name="HUD_Clock_Label" left="4" top="22" width="88" height="16" text="Show Labels"/>
+							<control progid="DecalControls.Checkbox" name="HUD_Clock_Short" left="100" top="4" width="108" height="16" text="Short Date"/>
+							<control progid="DecalControls.List" name="HUD_Clock" left="0" top="38" width="230" height="134">
+								<column progid="DecalControls.CheckColumn" fixedwidth="20"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="80"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="30"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="60"/>
+								<column progid="DecalControls.IconColumn" fixedwidth="20"/>
+							</control>
+							<control progid="DecalControls.PushButton" name="HUD_Clock_All" left="202" top="175" width="24" height="19" textcolor="16777215" text="All"/>
+							<control progid="DecalControls.Checkbox" name="HUD_Date_Disp" left="186" top="22" width="44" height="16" text="Date"/>
+							<control progid="DecalControls.StaticText" name="Label1" left="100" top="22" width="28" height="16" text="Horz:"/>
+							<control progid="DecalControls.PushButton" name="HUD_Timer_Up" left="82" top="175" width="18" height="19" textcolor="16777215" text="Up"/>
+							<control progid="DecalControls.PushButton" name="HUD_Timer_Down" left="62" top="175" width="18" height="19" textcolor="16777215" text="Dn"/>
+							<control progid="DecalControls.Edit" name="HUD_Clock_Timer" left="2" top="176" width="58" height="19" imageportalsrc="4726" text="00:05:00"/>
+						</control>
+
+					</page>
+					<page label="Main">
+						<control progid="DecalControls.FixedLayout" clipped="">
+							<control progid="DecalControls.List" name="HUD_LIST" left="0" top="22" width="230" height="150">
+								<column progid="DecalControls.CheckColumn" name="HUD_CHECK" fixedwidth="20"/>
+								<column progid="DecalControls.TextColumn" name="HUD_NAME" fixedwidth="134"/>
+								<column progid="DecalControls.IconColumn" name="HUD_COLOR" fixedwidth="20"/>
+								<column progid="DecalControls.IconColumn" name="HUD_MOVE_DOWN" fixedwidth="18"/>
+								<column progid="DecalControls.IconColumn" name="HUD_MOVE_UP" fixedwidth="18"/>
+							</control>
+							<control progid="DecalControls.Choice" name="HUD_Main_Color" left="76" top="176" width="124" height="19" selected="0">
+								<option text="White" data="White"/>
+								<option text="Grey" data="Grey"/>
+								<option text="Black" data="Black"/>
+								<option text="Red" data="Red"/>
+								<option text="Light Red" data="Light Red"/>
+								<option text="Blue" data="Blue"/>
+								<option text="Light Blue" data="Light Blue"/>
+								<option text="Turquoise" data="Turquoise"/>
+								<option text="Green" data="Green"/>
+								<option text="Light Green" data="Light Green"/>
+								<option text="Yellow" data="Yellow"/>
+								<option text="Dark Yellow" data="Dark Yellow"/>
+								<option text="Purple" data="Purple"/>
+								<option text="Light Purple" data="Light Purple"/>
+								<option text="Pink" data="Pink"/>
+								<option text="Peach" data="Peach"/>
+								<option text="Orange" data="Orange"/>
+								<option text="Light Orange" data="Light Orange"/>
+							</control>
+							<control progid="DecalControls.Checkbox" name="HUD_Main_Lbl" left="6" top="4" width="76" height="12" text="Short Labels"/>
+							<control progid="DecalControls.PushButton" name="HUD_Main_All" left="202" top="175" width="24" height="19" textcolor="16777215" text="All"/>
+							<control progid="DecalControls.Choice" name="HUD_Timeout" left="152" top="2" width="76" height="19" selected="0">
+								<option text="1 Sec" data="1000"/>
+								<option text="2 Sec" data="2000"/>
+								<option text="3 Sec" data="3000"/>
+								<option text="4 Sec" data="4000"/>
+								<option text="5 Sec" data="5000"/>
+								<option text="10 Sec" data="10000"/>
+								<option text="15 Sec" data="15000"/>
+								<option text="20 Sec" data="20000"/>
+								<option text="30 Sec" data="30000"/>
+								<option text="1 Min" data="60000"/>
+								<option text="2 Min" data="120000"/>
+								<option text="5 Min" data="300000"/>
+								<option text="Never" data="0"/>
+							</control>
+						</control>
+
+					</page>
+					<page label="Items">
+						<control progid="DecalControls.FixedLayout" clipped="">
+							<control progid="DecalControls.Choice" name="HUD_Items_Color" left="2" top="2" width="110" height="19" selected="0">
+								<option text="White" data="White"/>
+								<option text="Grey" data="Grey"/>
+								<option text="Black" data="Black"/>
+								<option text="Light Red" data="Light Red"/>
+								<option text="Blue" data="Blue"/>
+								<option text="Light Blue" data="Light Blue"/>
+								<option text="Turquoise" data="Turquoise"/>
+								<option text="Green" data="Green"/>
+								<option text="Light Green" data="Light Green"/>
+								<option text="Dark Yellow" data="Dark Yellow"/>
+								<option text="Purple" data="Purple"/>
+								<option text="Light Purple" data="Light Purple"/>
+								<option text="Pink" data="Pink"/>
+								<option text="Peach" data="Peach"/>
+								<option text="Orange" data="Orange"/>
+								<option text="Light Orange" data="Light Orange"/>
+							</control>
+							<control progid="DecalControls.List" name="HUD_Items" left="0" top="22" width="230" height="150">
+								<column progid="DecalControls.CheckColumn" fixedwidth="20"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="105"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="30"/>
+								<column progid="DecalControls.IconColumn" fixedwidth="20"/>
+								<column progid="DecalControls.IconColumn" fixedwidth="20"/>
+								<column progid="DecalControls.IconColumn" fixedwidth="20"/>
+								<column progid="DecalControls.TextColumn"/>
+							</control>
+							<control progid="DecalControls.Edit" name="HUD_Items_Text" left="2" top="176" width="120" height="19" imageportalsrc="4726" text=""/>
+							<control progid="DecalControls.PushButton" name="HUD_Items_Add" left="160" top="176" width="32" height="19" textcolor="16777215" text="Add"/>
+							<control progid="DecalControls.Edit" name="HUD_Items_Count" left="126" top="176" width="28" height="19" imageportalsrc="4726" text="1"/>
+							<control progid="DecalControls.PushButton" name="HUD_Items_Sel" left="196" top="176" width="28" height="19" textcolor="16777215" text="Sel"/>
+							<control progid="DecalControls.Choice" name="HUD_Items_Icon_Size" left="114" top="2" width="58" height="19" selected="0">
+								<option text="16" data="16"/>
+								<option text="20" data="20"/>
+								<option text="24" data="24"/>
+								<option text="28" data="28"/>
+								<option text="32" data="32"/>
+							</control>
+							<control progid="DecalControls.Checkbox" name="HUD_Items_Horz" left="182" top="4" width="50" height="12" text="Horz"/>
+						</control>
+
+					</page>
+					<page label="Other">
+						<control progid="DecalControls.FixedLayout" clipped="">
+							<control progid="DecalControls.StaticText" name="Label2" left="6" top="4" width="66" height="16" text="Status:"/>
+							<control progid="DecalControls.Choice" name="HUD_Status_Color" left="4" top="20" width="110" height="20" selected="0">
+								<option text="White" data="White"/>
+								<option text="Grey" data="Grey"/>
+								<option text="Black" data="Black"/>
+								<option text="Red" data="Red"/>
+								<option text="Light Red" data="Light Red"/>
+								<option text="Blue" data="Blue"/>
+								<option text="Light Blue" data="Light Blue"/>
+								<option text="Turquoise" data="Turquoise"/>
+								<option text="Green" data="Green"/>
+								<option text="Light Green" data="Light Green"/>
+								<option text="Yellow" data="Yellow"/>
+								<option text="Dark Yellow" data="Dark Yellow"/>
+								<option text="Purple" data="Purple"/>
+								<option text="Light Purple" data="Light Purple"/>
+								<option text="Pink" data="Pink"/>
+								<option text="Peach" data="Peach"/>
+								<option text="Orange" data="Orange"/>
+								<option text="Light Orange" data="Light Orange"/>
+							</control>
+							<control progid="DecalControls.Choice" name="HUD_Target_Color" left="4" top="58" width="110" height="20" selected="0">
+								<option text="White" data="White"/>
+								<option text="Grey" data="Grey"/>
+								<option text="Black" data="Black"/>
+								<option text="Red" data="Red"/>
+								<option text="Light Red" data="Light Red"/>
+								<option text="Blue" data="Blue"/>
+								<option text="Light Blue" data="Light Blue"/>
+								<option text="Turquoise" data="Turquoise"/>
+								<option text="Green" data="Green"/>
+								<option text="Light Green" data="Light Green"/>
+								<option text="Yellow" data="Yellow"/>
+								<option text="Dark Yellow" data="Dark Yellow"/>
+								<option text="Purple" data="Purple"/>
+								<option text="Light Purple" data="Light Purple"/>
+								<option text="Pink" data="Pink"/>
+								<option text="Peach" data="Peach"/>
+								<option text="Orange" data="Orange"/>
+								<option text="Light Orange" data="Light Orange"/>
+							</control>
+							<control progid="DecalControls.Choice" name="HUD_Status_Lines" left="116" top="20" width="110" height="19" selected="0">
+								<option text="1 Line" data="1"/>
+								<option text="2 Lines" data="2"/>
+								<option text="3 Lines" data="3"/>
+								<option text="4 Lines" data="4"/>
+								<option text="5 Lines" data="5"/>
+								<option text="6 Lines" data="6"/>
+							</control>
+							<control progid="DecalControls.StaticText" name="Label3" left="6" top="42" width="66" height="16" text="Target:"/>
+							<control progid="DecalControls.Choice" name="HUD_Target_Level" left="116" top="58" width="110" height="19" selected="0">
+								<option text="I Debuff" data="I"/>
+								<option text="II Debuff" data="II"/>
+								<option text="III Debuff" data="III"/>
+								<option text="IV Debuff" data="IV"/>
+								<option text="V Debuff" data="V"/>
+								<option text="VI Debuff" data="VI"/>
+								<option text="VII Debuff" data="VII"/>
+								<option text="VIII Debuff" data="VIII"/>
+							</control>
+						</control>
+
+					</page>
+					</control>
+
+				</control>
+
+			</page>
+			<page label="Settings">
+				<control progid="DecalControls.FixedLayout" clipped="">
+					<control progid="DecalControls.Choice" name="Settings_Drop" left="8" top="32" width="208" height="24"/>
+					<control progid="DecalControls.Edit" name="Settings_Text" left="8" top="96" width="208" height="24" imageportalsrc="4726" text=""/>
+					<control progid="DecalControls.PushButton" name="Settings_Add" left="80" top="128" width="64" height="24" textcolor="16777215" text="Add"/>
+					<control progid="DecalControls.PushButton" name="Settings_Rename" left="152" top="128" width="64" height="24" textcolor="16777215" text="Rename"/>
+					<control progid="DecalControls.PushButton" name="Settings_Delete" left="80" top="64" width="64" height="24" textcolor="16777215" text="Delete"/>
+					<control progid="DecalControls.StaticText" name="Settings_Active" left="8" top="8" width="208" height="16" text=""/>
+					<control progid="DecalControls.PushButton" name="Settings_Load" left="152" top="64" width="64" height="24" textcolor="16777215" text="Load"/>
+				</control>
+
+			</page>
+			</control>
+
+		</control>
+
+</view>

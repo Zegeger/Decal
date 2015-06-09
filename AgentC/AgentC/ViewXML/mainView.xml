@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<view icon="26903" title="AgentC" width="230" height="236">
+		<control progid="DecalControls.FixedLayout" clipped="">
+			<control progid="DecalControls.Notebook" name="nbchat" left="0" top="0" width="230" height="236">
+			<page label="Log">
+				<control progid="DecalControls.FixedLayout" clipped="">
+					<control progid="DecalControls.Notebook" name="nblog" left="0" top="0" width="230" height="236">
+					<page label="Recent">
+						<control progid="DecalControls.FixedLayout" clipped="">
+							<control progid="DecalControls.Choice" name="Chat_Log_Filter" left="104" top="2" width="110" height="19" selected="0">
+								<option text="All" data="-1"/>
+								<option text="Open Chat" data="1"/>
+								<option text="Tells" data="2"/>
+								<option text="Fellowship" data="3"/>
+								<option text="Patron/Covassal" data="4"/>
+								<option text="Vassal" data="5"/>
+								<option text="Allegiance" data="6"/>
+								<option text="Channels" data="7"/>
+							</control>
+							<control progid="DecalControls.List" name="Chat_Log_View" left="0" top="22" width="230" height="136">
+								<column progid="DecalControls.TextColumn" fixedwidth="230"/>
+								<column progid="DecalControls.TextColumn"/>
+							</control>
+							<control progid="DecalControls.Checkbox" name="Chat_Log_AFK" left="4" top="162" width="44" height="16" text="AFK"/>
+							<control progid="DecalControls.Edit" name="Chat_Log_AFK_Message" left="46" top="160" width="182" height="19" imageportalsrc="4726" text=""/>
+							<control progid="DecalControls.Edit" name="Chat_Log_Search" left="2" top="2" width="100" height="19" imageportalsrc="4726" text=""/>
+							<control progid="DecalControls.PushButton" name="Chat_Log_Dir" left="216" top="2" width="12" height="18" textcolor="16777215" text="A"/>
+						</control>
+
+					</page>
+					<page label="Options">
+						<control progid="DecalControls.FixedLayout" clipped="">
+							<control progid="DecalControls.Checkbox" name="Chat_Log_Enable" left="4" top="4" width="94" height="16" text="Recent Log"/>
+							<control progid="DecalControls.List" name="Chat_Log_Options" left="0" top="36" width="230" height="108">
+								<column progid="DecalControls.TextColumn" fixedwidth="100"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="25"/>
+								<column progid="DecalControls.CheckColumn" fixedwidth="20"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="25"/>
+								<column progid="DecalControls.CheckColumn" fixedwidth="20"/>
+							</control>
+							<control progid="DecalControls.Checkbox" name="Chat_Log_Timestamp" left="4" top="146" width="104" height="16" text="Timestamp Log"/>
+							<control progid="DecalControls.Edit" name="Chat_Log_Max" left="148" top="2" width="40" height="19" imageportalsrc="4726" text="100"/>
+							<control progid="DecalControls.Checkbox" name="Chat_Log_XML" left="120" top="146" width="96" height="16" text="Save To XML"/>
+							<control progid="DecalControls.Checkbox" name="Chat_Log_By_Date" left="120" top="164" width="98" height="16" text="Seperate By Date"/>
+							<control progid="DecalControls.Checkbox" name="Chat_Log_Auto" left="4" top="164" width="104" height="16" text="Auto Log to File"/>
+							<control progid="DecalControls.StaticText" name="lineslbl" left="194" top="4" width="30" height="16" text="Lines"/>
+							<control progid="DecalControls.PushButton" name="Chat_Log_Clear" left="98" top="4" width="46" height="16" textcolor="16777215" text="Clear"/>
+							<control progid="DecalControls.StaticText" name="Log_lbl1" left="128" top="22" width="36" height="16" text="Recent"/>
+							<control progid="DecalControls.StaticText" name="Log_lbl2" left="192" top="22" width="22" height="16" text="File"/>
+							<control progid="DecalControls.StaticText" name="Log_lbl3" left="4" top="22" width="38" height="16" text="Type"/>
+						</control>
+
+					</page>
+					</control>
+
+				</control>
+
+			</page>
+			<page label="General">
+				<control progid="DecalControls.FixedLayout" clipped="">
+					<control progid="DecalControls.Notebook" name="nbchatgeneral" left="0" top="0" width="230" height="250">
+					<page label="Predefined">
+						<control progid="DecalControls.FixedLayout" clipped="">
+							<control progid="DecalControls.List" name="Chat_Color" left="0" top="0" width="230" height="158">
+								<column progid="DecalControls.CheckColumn" fixedwidth="15"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="110"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="15"/>
+								<column progid="DecalControls.IconColumn" fixedwidth="18"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="70"/>
+							</control>
+							<control progid="DecalControls.Choice" name="Chat_Color_Color" left="50" top="160" width="88" height="19" selected="0">
+								<option text="Default" data="-1"/>
+								<option text="White" data="2"/>
+								<option text="Grey" data="12"/>
+								<option text="Red" data="21"/>
+								<option text="Light Red" data="22"/>
+								<option text="Blue" data="7"/>
+								<option text="Light Blue" data="14"/>
+								<option text="Turquoise" data="13"/>
+								<option text="Green" data="0"/>
+								<option text="Yellow" data="10"/>
+								<option text="Dark Yellow" data="4"/>
+								<option text="Purple" data="5"/>
+								<option text="Pink" data="8"/>
+								<option text="Orange" data="18"/>
+							</control>
+							<control progid="DecalControls.Choice" name="Chat_Color_Sound" left="140" top="160" width="88" height="19" selected="0">
+								<option text="None" data="-1"/>
+							</control>
+							<control progid="DecalControls.Choice" name="Chat_Color_Window" left="2" top="160" width="46" height="19" selected="0">
+								<option text="D" data="0"/>
+								<option text="M" data="1"/>
+								<option text="1" data="2"/>
+								<option text="2" data="3"/>
+								<option text="3" data="4"/>
+								<option text="4" data="5"/>
+								<option text="B" data="-1"/>
+							</control>
+						</control>
+
+					</page>
+					<page label="Custom">
+						<control progid="DecalControls.FixedLayout" clipped="">
+							<control progid="DecalControls.List" name="Chat_Custom" left="0" top="0" width="230" height="98">
+								<column progid="DecalControls.CheckColumn" fixedwidth="12"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="75"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="38"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="20"/>
+								<column progid="DecalControls.IconColumn" fixedwidth="18"/>
+								<column progid="DecalControls.TextColumn" fixedwidth="50"/>
+								<column progid="DecalControls.TextColumn"/>
+							</control>
+							<control progid="DecalControls.Edit" name="Chat_Custom_Text" left="2" top="100" width="168" height="19" imageportalsrc="4726" text=""/>
+							<control progid="DecalControls.Choice" name="Chat_Custom_Type" left="172" top="100" width="56" height="19" selected="0">
+								<option text="All" data=""/>
+								<option text="0" data=""/>
+								<option text="1" data=""/>
+								<option text="2" data=""/>
+								<option text="3" data=""/>
+								<option text="4" data=""/>
+								<option text="5" data=""/>
+								<option text="6" data=""/>
+								<option text="7" data=""/>
+								<option text="8" data=""/>
+								<option text="9" data=""/>
+								<option text="10" data=""/>
+								<option text="11" data=""/>
+								<option text="12" data=""/>
+								<option text="13" data=""/>
+								<option text="14" data=""/>
+								<option text="15" data=""/>
+								<option text="16" data=""/>
+								<option text="17" data=""/>
+								<option text="18" data=""/>
+								<option text="19" data=""/>
+								<option text="20" data=""/>
+								<option text="21" data=""/>
+								<option text="22" data=""/>
+								<option text="23" data=""/>
+								<option text="24" data=""/>
+								<option text="25" data=""/>
+								<option text="26" data=""/>
+								<option text="27" data=""/>
+								<option text="28" data=""/>
+								<option text="29" data=""/>
+								<option text="30" data=""/>
+								<option text="31" data=""/>
+								<option text="AZ" data=""/>
+							</control>
+							<control progid="DecalControls.Choice" name="Chat_Custom_Color" left="50" top="120" width="88" height="19" selected="0">
+								<option text="Default" data="-1"/>
+								<option text="White" data="2"/>
+								<option text="Grey" data="12"/>
+								<option text="Red" data="21"/>
+								<option text="Light Red" data="22"/>
+								<option text="Blue" data="7"/>
+								<option text="Light Blue" data="14"/>
+								<option text="Turquoise" data="13"/>
+								<option text="Green" data="0"/>
+								<option text="Yellow" data="10"/>
+								<option text="Dark Yellow" data="4"/>
+								<option text="Purple" data="5"/>
+								<option text="Pink" data="8"/>
+								<option text="Orange" data="18"/>
+							</control>
+							<control progid="DecalControls.Choice" name="Chat_Custom_Sound" left="140" top="120" width="88" height="19" selected="0">
+								<option text="None" data="-1"/>
+							</control>
+							<control progid="DecalControls.Edit" name="Chat_Custom_Window" left="2" top="120" width="46" height="19" imageportalsrc="4726" text=""/>
+							<control progid="DecalControls.PushButton" name="Chat_Custom_Down" left="2" top="160" width="43" height="18" textcolor="16777215" text="Down"/>
+							<control progid="DecalControls.PushButton" name="Chat_Custom_Up" left="47" top="160" width="43" height="18" textcolor="16777215" text="Up"/>
+							<control progid="DecalControls.PushButton" name="Chat_Custom_Delete" left="92" top="160" width="44" height="18" textcolor="16777215" text="Delete"/>
+							<control progid="DecalControls.PushButton" name="Chat_Custom_Add" left="184" top="160" width="44" height="18" textcolor="16777215" text="Add"/>
+							<control progid="DecalControls.PushButton" name="Chat_Custom_Edit" left="138" top="160" width="44" height="18" textcolor="16777215" text="Edit"/>
+							<control progid="DecalControls.Edit" name="Chat_Custom_Action" left="2" top="140" width="224" height="19" imageportalsrc="4726" text=""/>
+						</control>
+
+					</page>
+					</control>
+
+				</control>
+
+			</page>
+			<page label="Filter">
+				<control progid="DecalControls.FixedLayout" clipped="">
+					<control progid="DecalControls.List" name="Chat_Filter" left="0" top="0" width="230" height="174">
+						<column progid="DecalControls.CheckColumn" name="Chat_Filter_Enabled" fixedwidth="20"/>
+						<column progid="DecalControls.TextColumn" name="Chat_Filter_Name" fixedwidth="80"/>
+						<column progid="DecalControls.TextColumn" name="Chat_Filter_Whole" fixedwidth="35"/>
+						<column progid="DecalControls.TextColumn" name="Chat_Filter_Replace" fixedwidth="35"/>
+						<column progid="DecalControls.IconColumn" name="Chat_Filter_Delete" fixedwidth="20"/>
+					</control>
+					<control progid="DecalControls.Edit" name="Filter_Box" left="2" top="176" width="126" height="19" imageportalsrc="4726" text=""/>
+					<control progid="DecalControls.PushButton" name="Filter_Add" left="196" top="176" width="30" height="19" textcolor="16777215" text="Add"/>
+					<control progid="DecalControls.Checkbox" name="Chat_Filter_Matching" left="136" top="178" width="28" height="16" text="W"/>
+					<control progid="DecalControls.Checkbox" name="Chat_Filter_Action" left="168" top="178" width="28" height="16" text="R"/>
+				</control>
+
+			</page>
+			<page label="Alias">
+				<control progid="DecalControls.FixedLayout" clipped="">
+					<control progid="DecalControls.List" name="Chat_Alias" left="0" top="0" width="230" height="174">
+						<column progid="DecalControls.CheckColumn" name="Chat_Alias_Check" fixedwidth="20"/>
+						<column progid="DecalControls.TextColumn" name="Chat_Alias_Abbr" fixedwidth="40"/>
+						<column progid="DecalControls.TextColumn" name="Chat_Alias_Full" fixedwidth="135"/>
+						<column progid="DecalControls.IconColumn" name="Chat_Alias_Delete" fixedwidth="20"/>
+					</control>
+					<control progid="DecalControls.Edit" name="Alias_Abbr" left="4" top="176" width="40" height="19" imageportalsrc="4726" text=""/>
+					<control progid="DecalControls.Edit" name="Alias_Full" left="48" top="176" width="132" height="19" imageportalsrc="4726" text=""/>
+					<control progid="DecalControls.PushButton" name="Alias_Add" left="186" top="176" width="40" height="19" textcolor="16777215" text="Add"/>
+				</control>
+
+			</page>
+			<page label="Options">
+				<control progid="DecalControls.FixedLayout" clipped="">
+					<control progid="DecalControls.Notebook" name="nboptions" left="0" top="0" width="230" height="216">
+					<page label="Chat">
+						<control progid="DecalControls.FixedLayout" clipped="">
+							<control progid="DecalControls.List" name="Chat_Options" left="0" top="0" width="230" height="176">
+								<column progid="DecalControls.CheckColumn" name="Chat_Option_Enabled"/>
+								<column progid="DecalControls.TextColumn" name="Chat_Option_Name"/>
+							</control>
+						</control>
+
+					</page>
+					<page label="Settings">
+						<control progid="DecalControls.FixedLayout" clipped="">
+							<control progid="DecalControls.Choice" name="Settings_Drop" left="8" top="32" width="208" height="24"/>
+							<control progid="DecalControls.Edit" name="Settings_Text" left="8" top="96" width="208" height="24" imageportalsrc="4726" text=""/>
+							<control progid="DecalControls.PushButton" name="Settings_Add" left="80" top="128" width="64" height="24" textcolor="16777215" text="Add"/>
+							<control progid="DecalControls.PushButton" name="Settings_Rename" left="152" top="128" width="64" height="24" textcolor="16777215" text="Rename"/>
+							<control progid="DecalControls.PushButton" name="Settings_Delete" left="80" top="64" width="64" height="24" textcolor="16777215" text="Delete"/>
+							<control progid="DecalControls.StaticText" name="Settings_Active" left="8" top="8" width="208" height="16" text=""/>
+							<control progid="DecalControls.PushButton" name="Settings_Load" left="152" top="64" width="64" height="24" textcolor="16777215" text="Load"/>
+						</control>
+
+					</page>
+					</control>
+
+				</control>
+
+			</page>
+			</control>
+
+		</control>
+
+</view>

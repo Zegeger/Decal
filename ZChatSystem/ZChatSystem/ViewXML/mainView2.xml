@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<view icon="4987" title="Yoshi's Boon" width="300" height="300">
+		<control progid="DecalControls.Notebook" name="Root">
+		<page label="Scan">
+			<control progid="DecalControls.FixedLayout" clipped="">
+				<control progid="DecalControls.List" name="WorldItems" left="0" top="0" width="300" height="149">
+					<column progid="DecalControls.IconColumn" name="Icon" fixedwidth="17"/>
+					<column progid="DecalControls.TextColumn" name="Name" fixedwidth="150"/>
+					<column progid="DecalControls.TextColumn" name="Category" fixedwidth="50"/>
+					<column progid="DecalControls.TextColumn" name="Category" fixedwidth="67"/>
+				</control>
+				<control progid="DecalControls.Checkbox" name="RelCoords" left="8" top="232" width="96" height="16" text="Relative Coords"/>
+				<control progid="DecalControls.List" name="ContainerItems" left="0" top="152" width="300" height="76">
+					<column progid="DecalControls.IconColumn" name="Icon" fixedwidth="17"/>
+					<column progid="DecalControls.TextColumn" name="Name" fixedwidth="150"/>
+					<column progid="DecalControls.TextColumn" name="Category" fixedwidth="67"/>
+				</control>
+				<control progid="DecalControls.PushButton" name="ClearAll" left="220" top="232" width="72" height="16" textcolor="16777215" text="Clear All"/>
+			</control>
+
+		</page>
+		<page label="Salvage">
+			<control progid="DecalControls.FixedLayout" clipped="">
+				<control progid="DecalControls.List" name="SalvageList" left="0" top="0" width="300" height="224">
+					<column progid="DecalControls.IconColumn" name="Icon" fixedwidth="17"/>
+					<column progid="DecalControls.TextColumn" name="Name" fixedwidth="200"/>
+					<column progid="DecalControls.TextColumn" name="Workmanship" fixedwidth="46"/>
+					<column progid="DecalControls.IconColumn" name="Remove" fixedwidth="17"/>
+				</control>
+				<control progid="DecalControls.PushButton" name="SalvageAll" left="4" top="228" width="72" height="16" textcolor="16777215" text="Salvage All"/>
+				<control progid="DecalControls.PushButton" name="ScanPacks" left="224" top="228" width="72" height="16" textcolor="16777215" text="Scan Packs"/>
+			</control>
+
+		</page>
+		<page label="Options">
+			<control progid="DecalControls.Notebook" name="Options">
+			<page label="Scan">
+				<control progid="DecalControls.Notebook" name="ScanOptions">
+				<page label="Match">
+					<control progid="DecalControls.FixedLayout" clipped="">
+					</control>
+
+				</page>
+				<page label="Weapons">
+					<control progid="DecalControls.FixedLayout" clipped="">
+					</control>
+
+				</page>
+				<page label="Armor">
+					<control progid="DecalControls.FixedLayout" clipped="">
+					</control>
+
+				</page>
+				<page label="Items">
+					<control progid="DecalControls.FixedLayout" clipped="">
+					</control>
+
+				</page>
+				<page label="Advanced">
+					<control progid="DecalControls.FixedLayout" clipped="">
+					</control>
+
+				</page>
+				</control>
+
+			</page>
+			<page label="Salvage">
+				<control progid="DecalControls.FixedLayout" clipped="">
+				</control>
+
+			</page>
+			<page label="HUD">
+				<control progid="DecalControls.FixedLayout" clipped="">
+				</control>
+
+			</page>
+			</control>
+
+		</page>
+		</control>
+
+</view>

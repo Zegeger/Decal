@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A7A56399-C868-48F9-88F0-446AC9C90E1E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zegeger.Decal.Plugins.AgentU</RootNamespace>
+    <AssemblyName>AgentU</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;VVS_REFERENCED, VVS_WRAPPERS_PUBLIC</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Decal.Adapter, Version=2.9.6.0, Culture=neutral, PublicKeyToken=bd1c8ce002ce221e, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Games\AC\Decal\Decal.Adapter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Decal.FileService">
+      <HintPath>..\..\..\..\..\Games\AC\Decal\Decal.FileService.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Decal.Interop.Core, Version=2.9.6.1, Culture=neutral, PublicKeyToken=481f17d392f1fb65, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Decal 3.0\.NET 2.0 PIA\Decal.Interop.Core.DLL</HintPath>
+    </Reference>
+    <Reference Include="Decal.Interop.Filters, Version=2.9.7.5, Culture=neutral, PublicKeyToken=481f17d392f1fb65, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\Games\AC\Decal\.NET 2.0 PIA\Decal.Interop.Filters.DLL</HintPath>
+    </Reference>
+    <Reference Include="Decal.Interop.Inject, Version=2.9.5.0, Culture=neutral, PublicKeyToken=481f17d392f1fb65, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Decal.Interop.SpellFilter, Version=2.9.7.5, Culture=neutral, PublicKeyToken=481f17d392f1fb65, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\Games\AC\Decal\.NET 2.0 PIA\Decal.Interop.SpellFilter.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VirindiHotkeySystem, Version=1.0.0.6, Culture=neutral, PublicKeyToken=2b5d7e4bf12b590d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Games\AC\Decal Plugins\Virindi\VirindiHotkeySystem\VirindiHotkeySystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VirindiViewService, Version=1.0.0.47, Culture=neutral, PublicKeyToken=2b5d7e4bf12b590d, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Games\AC\Decal Plugins\Virindi\VirindiViewService\VirindiViewService.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="ZChatSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2b5d7e4bf12b590d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ZChatSystem\ZChatSystem\bin\Debug\ZChatSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\ActionQueue.cs">
+      <Link>ActionQueue.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\BlockID.cs">
+      <Link>BlockID.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\CharData.cs">
+      <Link>CharData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\CommandHandler.cs">
+      <Link>CommandHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\DecalList.cs">
+      <Link>DecalList.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\EnchantmentTable.cs">
+      <Link>EnchantmentTable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\errorLogging.cs">
+      <Link>errorLogging.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\HotkeyWrapper.cs">
+      <Link>HotkeyWrapper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\RefData.cs">
+      <Link>RefData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\SettingControls.cs">
+      <Link>SettingControls.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\SettingProfile.cs">
+      <Link>SettingProfile.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\SoundManager.cs">
+      <Link>SoundManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\Updater.cs">
+      <Link>Updater.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\VirtualKeyboard.cs">
+      <Link>VirtualKeyboard.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\VVS\ViewSystemSelector.cs">
+      <Link>ViewSystemSelector.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\VVS\Wrapper.cs">
+      <Link>Wrapper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\VVS\Wrapper_Decal.cs">
+      <Link>Wrapper_Decal.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\VVS\Wrapper_MyHuds.cs">
+      <Link>Wrapper_MyHuds.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\VVS\Wrapper_WireupHelper.cs">
+      <Link>Wrapper_WireupHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\ZChatWrapper.cs">
+      <Link>ZChatWrapper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ZegegerLib\ZegegerLib\ZTimer.cs">
+      <Link>ZTimer.cs</Link>
+    </Compile>
+    <Compile Include="Actions.cs" />
+    <Compile Include="Component.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="ComponentTemplate.cs" />
+    <Compile Include="OneTouchComponent.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="DOTDispel.cs" />
+    <Compile Include="FillMana.cs" />
+    <Compile Include="ItemsComponent.cs" />
+    <Compile Include="EchoFilter.cs" />
+    <Compile Include="PluginCore.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingsComponent.cs" />
+    <Compile Include="UseBeers.cs" />
+    <Compile Include="UseGems.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ViewXML\mainView.xml">
+      <CustomToolNamespace>ViewXML</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SampleRegFile\testReg.reg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\RefData\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,10 @@
+<refData>
+  <References version="1.0.0">
+    <Reference name="ChatOptions">
+      <Value name="REMOVE_GREEN_NAMES" type="String">Remove Clickable Names</Value>
+      <Value name="IMPROVED_VITAE" type="String">Improved Vitae Message</Value>
+      <Value name="BLAST_RARE_MSG" type="String">Send Rare Message to All Windows</Value>
+      <Value name="SHOW_FRIENDS_ONLINE" type="String">Show Friends Online on Login</Value>
+    </Reference>
+  </References>
+</refData>

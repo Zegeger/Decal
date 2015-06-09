@@ -1,0 +1,550 @@
+<refData>
+  <References version="1.0.0">
+    <Reference name="ChatColorGeneral">
+      <Value name="AgentC" type="String">AgentC</Value>
+      <Value name="Open_Chat_In" type="String">Open Chat In</Value>
+      <Value name="Open_Chat_Out" type="String">Open Chat Out</Value>
+      <Value name="Tells_In" type="String">Tells In</Value>
+      <Value name="Tells_Out" type="String">Tells Out</Value>
+      <Value name="NPC_Tell" type="String">NPC Tell</Value>
+      <Value name="Fellowship_In" type="String">Fellowship In</Value>
+      <Value name="Fellowship_Out" type="String">Fellowship Out</Value>
+      <Value name="Patron_In" type="String">Patron In</Value>
+      <Value name="Patron_Out" type="String">Patron Out</Value>
+      <Value name="Vassal_In" type="String">Vassal In</Value>
+      <Value name="Vassal_Out" type="String">Vassal Out</Value>
+      <Value name="Covassal_In" type="String">Covassal In</Value>
+      <Value name="Covassal_Out" type="String">Covassal Out</Value>
+      <Value name="Allegiance_Chat" type="String">Allegiance Chat</Value>
+      <Value name="General_Chat" type="String">General Chat</Value>
+      <Value name="Trade_Chat" type="String">Trade Chat</Value>
+      <Value name="LFG_Chat" type="String">LFG Chat</Value>
+      <Value name="Roleplay_Chat" type="String">Roleplay Chat</Value>
+      <Value name="Emotes" type="String">Emotes</Value>
+      <Value name="Recalls" type="String">Recalls</Value>
+      <Value name="Vitae" type="String">Vitae</Value>
+      <Value name="Spellcasting_Out" type="String">Your Spells</Value>
+      <Value name="Spellcasting_In" type="String">Other Spells</Value>
+      <Value name="Comp_Burn" type="String">Comp Burn</Value>
+      <Value name="Spellwords_Out" type="String">Your Spellwords</Value>
+      <Value name="Spellwords_In" type="String">Other Spellwords</Value>
+      <Value name="Your_Magic_Combat" type="String">Your War Combat</Value>
+      <Value name="Enemy_Magic_Combat" type="String">Enemy Magic Combat</Value>
+      <Value name="Your_Melee_Combat" type="String">Your Melee Combat</Value>
+      <Value name="Enemy_Melee_Combat" type="String">Enemy Melee Combat</Value>
+      <Value name="Critical_Hits_Out" type="String">Your Crits</Value>
+      <Value name="Critical_Hits_In" type="String">Enemy Crits</Value>
+      <Value name="Kill_Message" type="String">Kill Message</Value>
+      <Value name="Your_Evades" type="String">Your Evades</Value>
+      <Value name="Enemy_Evades" type="String">Enemy Evades</Value>
+      <Value name="No_Damage" type="String">0 Damage Hits</Value>
+      <Value name="Resists" type="String">Your Resists</Value>
+      <Value name="Expire" type="String">Spell Expiration</Value>
+      <Value name="Errors" type="String">Errors</Value>
+    </Reference>
+    <Reference name="ChatColorIcons">
+      <Value name="Blue" type="Bitmap">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
+NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
+IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
+ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
+cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNl
+SUQ9InhtcC5paWQ6OEE1Qjk0ODdDNzQ1MTFFMkIwRjc4MjNBNDFDQTI3MDAiIHhtcE1NOkRvY3Vt
+ZW50SUQ9InhtcC5kaWQ6OEE1Qjk0ODhDNzQ1MTFFMkIwRjc4MjNBNDFDQTI3MDAiPiA8eG1wTU06
+RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4QTVCOTQ4NUM3NDUxMUUyQjBG
+NzgyM0E0MUNBMjcwMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4QTVCOTQ4NkM3NDUxMUUy
+QjBGNzgyM0E0MUNBMjcwMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1w
+bWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuPeVvoAAAAGUExURT6+/////+pbSYQAAAACdFJOU/8A
+5bcwSgAAAFBJREFUeNrs07sOACAIQ9Hr//+0g8bEIBQfo105Gy1FhB3AyBIwxQBMZgCewL13gX9v
+IgUgEBkAkfggD+5/8aAPunK6tLr2ejiJ6Z2uuwowAAvNAXlcYFKcAAAAAElFTkSuQmCC</Value>
+      <Value name="Dark Yellow" type="Bitmap">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
+NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
+IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
+ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
+cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNl
+SUQ9InhtcC5paWQ6REJDNjIwQ0RDNzQ1MTFFMjk4RjFBNzdGRjA5RDUyQ0QiIHhtcE1NOkRvY3Vt
+ZW50SUQ9InhtcC5kaWQ6REJDNjIwQ0VDNzQ1MTFFMjk4RjFBNzdGRjA5RDUyQ0QiPiA8eG1wTU06
+RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpEQkM2MjBDQkM3NDUxMUUyOThG
+MUE3N0ZGMDlENTJDRCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpEQkM2MjBDQ0M3NDUxMUUy
+OThGMUE3N0ZGMDlENTJDRCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1w
+bWV0YT4gPD94cGFja2V0IGVuZD0iciI/PoC9oCEAAAAGUExURdLSY////yCJVi0AAAACdFJOU/8A
+5bcwSgAAAFBJREFUeNrs07sOACAIQ9Hr//+0g8bEIBQfo105Gy1FhB3AyBIwxQBMZgCewL13gX9v
+IgUgEBkAkfggD+5/8aAPunK6tLr2ejiJ6Z2uuwowAAvNAXlcYFKcAAAAAElFTkSuQmCC</Value>
+      <Value name="Green" type="Bitmap">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
+NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
+IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
+ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
+cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNl
+SUQ9InhtcC5paWQ6RjhDN0ZEMUZDNzQ1MTFFMkJEQjJBRjM4NzkzMTE5NTUiIHhtcE1NOkRvY3Vt
+ZW50SUQ9InhtcC5kaWQ6RjhDN0ZEMjBDNzQ1MTFFMkJEQjJBRjM4NzkzMTE5NTUiPiA8eG1wTU06
+RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGOEM3RkQxREM3NDUxMUUyQkRC
+MkFGMzg3OTMxMTk1NSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGOEM3RkQxRUM3NDUxMUUy
+QkRCMkFGMzg3OTMxMTk1NSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1w
+bWV0YT4gPD94cGFja2V0IGVuZD0iciI/PpdQFbcAAAAGUExURX//fv///x4pMOoAAAACdFJOU/8A
+5bcwSgAAAFBJREFUeNrs07sOACAIQ9Hr//+0g8bEIBQfo105Gy1FhB3AyBIwxQBMZgCewL13gX9v
+IgUgEBkAkfggD+5/8aAPunK6tLr2ejiJ6Z2uuwowAAvNAXlcYFKcAAAAAElFTkSuQmCC</Value>
+      <Value name="Grey" type="Bitmap">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
+NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
+IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
+ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
+cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNl
+SUQ9InhtcC5paWQ6MUFFN0E5MjFDNzQ2MTFFMkE5OEFGNzE3NkFBODE2MkYiIHhtcE1NOkRvY3Vt
+ZW50SUQ9InhtcC5kaWQ6MUFFN0E5MjJDNzQ2MTFFMkE5OEFGNzE3NkFBODE2MkYiPiA8eG1wTU06
+RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxQUU3QTkxRkM3NDYxMUUyQTk4
+QUY3MTc2QUE4MTYyRiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxQUU3QTkyMEM3NDYxMUUy
+QTk4QUY3MTc2QUE4MTYyRiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1w
+bWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pn9rcLoAAAAGUExURdLSx////+KA2H8AAAACdFJOU/8A
+5bcwSgAAAFBJREFUeNrs07sOACAIQ9Hr//+0g8bEIBQfo105Gy1FhB3AyBIwxQBMZgCewL13gX9v
+IgUgEBkAkfggD+5/8aAPunK6tLr2ejiJ6Z2uuwowAAvNAXlcYFKcAAAAAElFTkSuQmCC</Value>
+      <Value name="Light Blue" type="Bitmap">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
+NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
+IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
+ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
+cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNl
+SUQ9InhtcC5paWQ6M0YwMDM1RENDNzQ2MTFFMjhCNDlBNzdDNTBGRkVGMEYiIHhtcE1NOkRvY3Vt
+ZW50SUQ9InhtcC5kaWQ6M0YwMDM1RERDNzQ2MTFFMjhCNDlBNzdDNTBGRkVGMEYiPiA8eG1wTU06
+RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozRjAwMzVEQUM3NDYxMUUyOEI0
+OUE3N0M1MEZGRUYwRiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozRjAwMzVEQkM3NDYxMUUy
+OEI0OUE3N0M1MEZGRUYwRiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1w
+bWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuC296EAAAAGUExURbTc7////+abDYgAAAACdFJOU/8A
+5bcwSgAAAFBJREFUeNrs07sOACAIQ9Hr//+0g8bEIBQfo105Gy1FhB3AyBIwxQBMZgCewL13gX9v
+IgUgEBkAkfggD+5/8aAPunK6tLr2ejiJ6Z2uuwowAAvNAXlcYFKcAAAAAElFTkSuQmCC</Value>
+      <Value name="Light Red" type="Bitmap">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
+NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
+IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
+ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
+cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNl
+SUQ9InhtcC5paWQ6NTJBMzAyRTVDNzQ2MTFFMjgzRDNCODlFNEIyNjkzNTEiIHhtcE1NOkRvY3Vt
+ZW50SUQ9InhtcC5kaWQ6NTJBMzAyRTZDNzQ2MTFFMjgzRDNCODlFNEIyNjkzNTEiPiA8eG1wTU06
+RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1MkEzMDJFM0M3NDYxMUUyODNE
+M0I4OUU0QjI2OTM1MSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1MkEzMDJFNEM3NDYxMUUy
+ODNEM0I4OUU0QjI2OTM1MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1w
+bWV0YT4gPD94cGFja2V0IGVuZD0iciI/Plf6UnAAAAAGUExURfR1cf///8lrbJQAAAACdFJOU/8A
+5bcwSgAAAFBJREFUeNrs07sOACAIQ9Hr//+0g8bEIBQfo105Gy1FhB3AyBIwxQBMZgCewL13gX9v
+IgUgEBkAkfggD+5/8aAPunK6tLr2ejiJ6Z2uuwowAAvNAXlcYFKcAAAAAElFTkSuQmCC</Value>
+      <Value name="Orange" type="Bitmap">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
+NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
+IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
+ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
+cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNl
+SUQ9InhtcC5paWQ6NjVBRDlDRUFDNzQ2MTFFMkIzM0VEQjY1RkFBMDQwQkYiIHhtcE1NOkRvY3Vt
+ZW50SUQ9InhtcC5kaWQ6NjVBRDlDRUJDNzQ2MTFFMkIzM0VEQjY1RkFBMDQwQkYiPiA8eG1wTU06
+RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2NUFEOUNFOEM3NDYxMUUyQjMz
+RURCNjVGQUEwNDBCRiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2NUFEOUNFOUM3NDYxMUUy
+QjMzRURCNjVGQUEwNDBCRiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1w
+bWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pha4egwAAAAGUExURe2SHv///xQDw10AAAACdFJOU/8A
+5bcwSgAAAFBJREFUeNrs07sOACAIQ9Hr//+0g8bEIBQfo105Gy1FhB3AyBIwxQBMZgCewL13gX9v
+IgUgEBkAkfggD+5/8aAPunK6tLr2ejiJ6Z2uuwowAAvNAXlcYFKcAAAAAElFTkSuQmCC</Value>
+      <Value name="Pink" type="Bitmap">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
+NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
+IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
+ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
+cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNl
+SUQ9InhtcC5paWQ6NzlCNDJDNjBDNzQ2MTFFMjkxQUU5NzE5N0UzMTQ4QzUiIHhtcE1NOkRvY3Vt
+ZW50SUQ9InhtcC5kaWQ6NzlCNDJDNjFDNzQ2MTFFMjkxQUU5NzE5N0UzMTQ4QzUiPiA8eG1wTU06
+RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3OUI0MkM1RUM3NDYxMUUyOTFB
+RTk3MTk3RTMxNDhDNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3OUI0MkM1RkM3NDYxMUUy
+OTFBRTk3MTk3RTMxNDhDNSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1w
+bWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pn0YNpcAAAAGUExURf+Vlf///9JljecAAAACdFJOU/8A
+5bcwSgAAAFBJREFUeNrs07sOACAIQ9Hr//+0g8bEIBQfo105Gy1FhB3AyBIwxQBMZgCewL13gX9v
+IgUgEBkAkfggD+5/8aAPunK6tLr2ejiJ6Z2uuwowAAvNAXlcYFKcAAAAAElFTkSuQmCC</Value>
+      <Value name="Purple" type="Bitmap">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
+NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
+IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
+ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
+cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNl
+SUQ9InhtcC5paWQ6OEU4OTIxQjdDNzQ2MTFFMkIyMTFFNUNGRDBEQzIyNjEiIHhtcE1NOkRvY3Vt
+ZW50SUQ9InhtcC5kaWQ6OEU4OTIxQjhDNzQ2MTFFMkIyMTFFNUNGRDBEQzIyNjEiPiA8eG1wTU06
+RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4RTg5MjFCNUM3NDYxMUUyQjIx
+MUU1Q0ZEMERDMjI2MSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4RTg5MjFCNkM3NDYxMUUy
+QjIxMUU1Q0ZEMERDMjI2MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1w
+bWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pkk9L1kAAAAGUExURf9+/////9n6bE4AAAACdFJOU/8A
+5bcwSgAAAFBJREFUeNrs07sOACAIQ9Hr//+0g8bEIBQfo105Gy1FhB3AyBIwxQBMZgCewL13gX9v
+IgUgEBkAkfggD+5/8aAPunK6tLr2ejiJ6Z2uuwowAAvNAXlcYFKcAAAAAElFTkSuQmCC</Value>
+      <Value name="Red" type="Bitmap">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
+NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
+IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
+ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
+cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNl
+SUQ9InhtcC5paWQ6QTFFN0ZGMzZDNzQ2MTFFMjk3NkRGNDBENDFFQTdCOEEiIHhtcE1NOkRvY3Vt
+ZW50SUQ9InhtcC5kaWQ6QTFFN0ZGMzdDNzQ2MTFFMjk3NkRGNDBENDFFQTdCOEEiPiA8eG1wTU06
+RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMUU3RkYzNEM3NDYxMUUyOTc2
+REY0MEQ0MUVBN0I4QSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBMUU3RkYzNUM3NDYxMUUy
+OTc2REY0MEQ0MUVBN0I4QSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1w
+bWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pn9rYSwAAAAGUExURf8+Pv///0/4vWQAAAACdFJOU/8A
+5bcwSgAAAFBJREFUeNrs07sOACAIQ9Hr//+0g8bEIBQfo105Gy1FhB3AyBIwxQBMZgCewL13gX9v
+IgUgEBkAkfggD+5/8aAPunK6tLr2ejiJ6Z2uuwowAAvNAXlcYFKcAAAAAElFTkSuQmCC</Value>
+      <Value name="Turquoise" type="Bitmap">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
+NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
+IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
+ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
+cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNl
+SUQ9InhtcC5paWQ6QjczNkU5NjJDNzQ2MTFFMkJDRTlGMjJEMDg1Q0REMTEiIHhtcE1NOkRvY3Vt
+ZW50SUQ9InhtcC5kaWQ6QjczNkU5NjNDNzQ2MTFFMkJDRTlGMjJEMDg1Q0REMTEiPiA8eG1wTU06
+RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCNzM2RTk2MEM3NDYxMUUyQkNF
+OUYyMkQwODVDREQxMSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCNzM2RTk2MUM3NDYxMUUy
+QkNFOUYyMkQwODVDREQxMSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1w
+bWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pvk1eMUAAAAGUExURT7c3P///7subXkAAAACdFJOU/8A
+5bcwSgAAAFBJREFUeNrs07sOACAIQ9Hr//+0g8bEIBQfo105Gy1FhB3AyBIwxQBMZgCewL13gX9v
+IgUgEBkAkfggD+5/8aAPunK6tLr2ejiJ6Z2uuwowAAvNAXlcYFKcAAAAAElFTkSuQmCC</Value>
+      <Value name="White" type="Bitmap">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
+NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
+IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
+ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
+cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNl
+SUQ9InhtcC5paWQ6Qzg0NzQ5NTlDNzQ2MTFFMkIzQ0NDMTI0NDUxQTIxNkMiIHhtcE1NOkRvY3Vt
+ZW50SUQ9InhtcC5kaWQ6Qzg0NzQ5NUFDNzQ2MTFFMkIzQ0NDMTI0NDUxQTIxNkMiPiA8eG1wTU06
+RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDODQ3NDk1N0M3NDYxMUUyQjND
+Q0MxMjQ0NTFBMjE2QyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDODQ3NDk1OEM3NDYxMUUy
+QjNDQ0MxMjQ0NTFBMjE2QyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1w
+bWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqTR0xIAAAAGUExURf///////1V89WwAAAACdFJOU/8A
+5bcwSgAAAFBJREFUeNrs07sOACAIQ9Hr//+0g8bEIBQfo105Gy1FhB3AyBIwxQBMZgCewL13gX9v
+IgUgEBkAkfggD+5/8aAPunK6tLr2ejiJ6Z2uuwowAAvNAXlcYFKcAAAAAElFTkSuQmCC</Value>
+      <Value name="Yellow" type="Bitmap">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
+NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
+IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
+ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
+cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNl
+SUQ9InhtcC5paWQ6RERDNERFNEJDNzQ2MTFFMkEwNTI5Mjg4NjkwQTg5ODMiIHhtcE1NOkRvY3Vt
+ZW50SUQ9InhtcC5kaWQ6RERDNERFNENDNzQ2MTFFMkEwNTI5Mjg4NjkwQTg5ODMiPiA8eG1wTU06
+RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpEREM0REU0OUM3NDYxMUUyQTA1
+MjkyODg2OTBBODk4MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpEREM0REU0QUM3NDYxMUUy
+QTA1MjkyODg2OTBBODk4MyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1w
+bWV0YT4gPD94cGFja2V0IGVuZD0iciI/PiIutMcAAAAGUExURf//Pv///5uNfA8AAAACdFJOU/8A
+5bcwSgAAAFBJREFUeNrs07sOACAIQ9Hr//+0g8bEIBQfo105Gy1FhB3AyBIwxQBMZgCewL13gX9v
+IgUgEBkAkfggD+5/8aAPunK6tLr2ejiJ6Z2uuwowAAvNAXlcYFKcAAAAAElFTkSuQmCC</Value>
+      <Value name="Default" type="Bitmap">
+iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QUQxODIwODJEMDYxMTFFMkE4MEY4RkJEMjVBMUQ0RjgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QUQxODIwODNEMDYxMTFFMkE4MEY4RkJEMjVBMUQ0RjgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBRDE4MjA4MEQwNjExMUUyQTgwRjhGQkQyNUExRDRGOCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBRDE4MjA4MUQwNjExMUUyQTgwRjhGQkQyNUExRDRGOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmgVh0QAAAAJUExURQAAAP///////3N4pWMAAAACdFJOU/8A5bcwSgAAAFZJREFUeNrU0zkOACAMA8GF/z+aAoTEERyOBreZCmyCCDuAmimgyQAY0gKwBOa9COx7Fi4AC+EBsBJ+ELv8CW7e4f4vHvRBV06XVtdeD8cxvdN1JwEGAJfcAjmQuH3wAAAAAElFTkSuQmCC</Value>
+    </Reference>
+    <Reference name="ChatColorRules">
+      <Value name="RuleXML" type="XML">
+        <Rules>
+          <Rule ReturnValue="General_Chat">
+            <All>
+              <StringTest Index="1" Match="[General] " Type="SW" />
+              <IntegerTest Index="0" Match="%%ChatClasses%General%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Trade_Chat">
+            <All>
+              <StringTest Index="1" Match="[Trade] " Type="SW" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Trade%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Spellwords_Out">
+            <All>
+              <StringTest Index="1" Match="You say," Type="SW" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Spell Words%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Spellwords_In">
+            <All>
+              <StringTest Index="1" Match=".*says,.*" Type="SW" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Spell Words%%" Type="RX" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Resists">
+            <All>
+              <StringTest Index="1" Match="You resist" Type="SW" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Spells%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Spellcasting_Out">
+            <Any>
+              <All>
+                <StringTest Index="1" Match="You say," Type="SW" />
+                <IntegerTest Index="0" Match="%%ChatClasses%Spells%%" Type="EQ" />
+              </All>
+              <All>
+                <StringTest Index="1" Match="Your spell fizzled" Type="SW" />
+                <IntegerTest Index="0" Match="%%ChatClasses%Spells%%" Type="EQ" />
+              </All>
+            </Any>
+          </Rule>
+          <Rule ReturnValue="Spellcasting_In">
+            <All>
+              <StringTest Index="1" Match=".*says,.*" Type="RX" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Spells%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Your_Magic_Combat">
+            <All>
+              <StringTest Index="1" Match="You .* for .* with .*" Type="RX" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Spells%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Enemy_Magic_Combat">
+            <All>
+              <StringTest Index="1" Match=".* you for .* with .*" Type="RX" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Spells%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Comp_Burn">
+            <All>
+              <StringTest Index="1" Match="The spell consumed" Type="SW" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Spells%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Critical_Hits_Out">
+            <Any>
+              <All>
+                <StringTest Index="1" Match="Critical hit!.*You.*" Type="RX" />
+                <IntegerTest Index="0" Match="%%ChatClasses%Attack Out%%" Type="EQ" />
+              </All>
+              <All>
+                <StringTest Index="1" Match="Critical hit!.*You.*" Type="RX" />
+                <IntegerTest Index="0" Match="%%ChatClasses%Spells%%" Type="EQ" />
+              </All>
+            </Any>
+          </Rule>
+          <Rule ReturnValue="Critical_Hits_In">
+            <Any>
+              <All>
+                <StringTest Index="1" Match="Critical hit!" Type="SW" />
+                <IntegerTest Index="0" Match="%%ChatClasses%Attack In%%" Type="EQ" />
+              </All>
+              <All>
+                <StringTest Index="1" Match="Critical hit!" Type="SW" />
+                <IntegerTest Index="0" Match="%%ChatClasses%Spells%%" Type="EQ" />
+              </All>
+            </Any>
+          </Rule>
+          <Rule ReturnValue="Your_Evades">
+            <All>
+              <StringTest Index="1" Match="You evaded" Type="SW" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Attack In%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Enemy_Evades">
+            <All>
+              <StringTest Index="1" Match=".*evaded your attack." Type="RX" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Attack Out%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="No_Damage">
+            <Any>
+              <All>
+                <StringTest Index="1" Match=".*for 0 points.*" Type="RX" />
+                <IntegerTest Index="0" Match="%%ChatClasses%Attack In%%" Type="EQ" />
+              </All>
+              <All>
+                <StringTest Index="1" Match=".*for 0 points.*" Type="RX" />
+                <IntegerTest Index="0" Match="%%ChatClasses%Attack Out%%" Type="EQ" />
+              </All>
+            </Any>
+          </Rule>
+          <Rule ReturnValue="Your_Melee_Combat">
+            <All>
+              <IntegerTest Index="0" Match="%%ChatClasses%Attack Out%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Enemy_Melee_Combat">
+            <All>
+              <IntegerTest Index="0" Match="%%ChatClasses%Attack In%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Kill_Message">
+            <All>
+              <StringTest Index="1" Match="_KILL_" Type="EQ" />
+              <IntegerTest Index="0" Match="%%ChatClasses%System%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Tells_Out">
+            <All>
+              <StringTest Index="1" Match="You tell" Type="SW" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Tell Out%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Tells_In">
+            <All>
+              <StringTest Index="1" Match=".*Tell:IIDString:.*tells you.*" Type="RX" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Tell In%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="NPC_Tell">
+            <All>
+              <StringTest Index="1" Match=".*tells you.*" Type="RX" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Tell In%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Open_Chat_Out">
+            <All>
+              <StringTest Index="1" Match="You say," Type="SW" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Open%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Open_Chat_In">
+            <All>
+              <StringTest Index="1" Match=".*says,.*" Type="RX" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Open%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Fellowship_Out">
+            <All>
+              <StringTest Index="1" Match="[Fellowship] You say," Type="SW" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Fellowship%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Fellowship_In">
+            <All>
+              <StringTest Index="1" Match="[Fellowship] .* says, .*" Type="RX" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Fellowship%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Patron_Out">
+            <All>
+              <StringTest Index="1" Match="You say to your Patron," Type="SW" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Patron Out%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Patron_In">
+            <All>
+              <StringTest Index="1" Match="Your patron" Type="SW" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Patron In%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Vassal_Out">
+            <All>
+              <StringTest Index="1" Match="You say to your Vassals," Type="SW" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Vassal Out%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Vassal_In">
+            <All>
+              <StringTest Index="1" Match="Your vassal" Type="SW" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Vassal In%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Covassal_Out">
+            <All>
+              <StringTest Index="1" Match="[Co-Vassals] You say," Type="SW" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Covassal%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Covassal_In">
+            <All>
+              <StringTest Index="1" Match="\[Co-Vassals\] .* says, .*" Type="RX" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Covassal%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Allegiance_Chat">
+            <All>
+              <IntegerTest Index="0" Match="%%ChatClasses%Allegiance%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Vitae">
+            <All>
+              <StringTest Index="1" Match="Vitae penalty" Type="SW" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Spells%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Expire">
+            <All>
+              <StringTest Index="1" Match=".*has expired." Type="RX" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Spells%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Emotes">
+            <All>
+              <IntegerTest Index="0" Match="%%ChatClasses%Emote%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Recalls">
+            <Any>
+              <All>
+                <StringTest Index="1" Match=".*is recalling.*" Type="RX" />
+                <IntegerTest Index="0" Match="%%ChatClasses%Recall%%" Type="EQ" />
+              </All>
+              <All>
+                <StringTest Index="1" Match=".*is going to.*" Type="RX" />
+                <IntegerTest Index="0" Match="%%ChatClasses%Recall%%" Type="EQ" />
+              </All>
+            </Any>
+          </Rule>
+          <Rule ReturnValue="Vitae">
+            <All>
+              <StringTest Index="1" Match="Your experience has reduced your Vitae penalty!" Type="SW" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Vitae%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="LFG_Chat">
+            <All>
+              <StringTest Index="1" Match="[LFG] " Type="SW" />
+              <IntegerTest Index="0" Match="%%ChatClasses%LFG%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="Roleplay_Chat">
+            <All>
+              <StringTest Index="1" Match="[Roleplay] " Type="SW" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Roleplay%%" Type="EQ" />
+            </All>
+          </Rule>
+        </Rules>
+      </Value>
+    </Reference>
+  </References>
+</refData>

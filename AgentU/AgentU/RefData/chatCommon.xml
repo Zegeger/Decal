@@ -1,0 +1,113 @@
+<refData>
+  <References version="1.0.0">
+    <Reference name="ChatColors">
+      <Value name="White" type="Int">2</Value>
+      <Value name="Grey" type="Int">12</Value>
+      <Value name="Red" type="Int">6</Value>
+      <Value name="Light Red" type="Int">22</Value>
+      <Value name="Blue" type="Int">7</Value>
+      <Value name="Light Blue" type="Int">14</Value>
+      <Value name="Turquoise" type="Int">13</Value>
+      <Value name="Green" type="Int">0</Value>
+      <Value name="Yellow" type="Int">3</Value>
+      <Value name="Dark Yellow" type="Int">4</Value>
+      <Value name="Purple" type="Int">5</Value>
+      <Value name="Pink" type="Int">8</Value>
+      <Value name="Orange" type="Int">18</Value>
+    </Reference>
+    <Reference name="ChatColorsHex">
+      <Value name="Green" type="Hex">7EFF7F</Value>
+      <Value name="White" type="Hex">FFFFFF</Value>
+      <Value name="Yellow" type="Hex">EBEB3A</Value>
+      <Value name="Dark Yellow" type="Hex">999647</Value>
+      <Value name="Purple" type="Hex">FF7EFF</Value>
+      <Value name="Red" type="Hex">B0342E</Value>
+      <Value name="Light Red" type="Hex">B35B52</Value>
+      <Value name="Blue" type="Hex">3EBEFF</Value>
+      <Value name="Pink" type="Hex">F6908F</Value>
+      <Value name="Grey" type="Hex">D2D2C7</Value>
+      <Value name="Turquoise" type="Hex">3EDCDC</Value>
+      <Value name="Light Blue" type="Hex">B4DCEF</Value>
+      <Value name="Orange" type="Hex">E78F1E</Value>
+    </Reference>
+    <Reference name="ChatColorsToHex">
+      <Value name="0" type="Alias" ref="ChatColorsHex">Green</Value>
+      <Value name="1" type="Alias" ref="ChatColorsHex">Green</Value>
+      <Value name="2" type="Alias" ref="ChatColorsHex">White</Value>
+      <Value name="3" type="Alias" ref="ChatColorsHex">Yellow</Value>
+      <Value name="4" type="Alias" ref="ChatColorsHex">Dark Yellow</Value>
+      <Value name="5" type="Alias" ref="ChatColorsHex">Purple</Value>
+      <Value name="6" type="Alias" ref="ChatColorsHex">Red</Value>
+      <Value name="7" type="Alias" ref="ChatColorsHex">Blue</Value>
+      <Value name="8" type="Alias" ref="ChatColorsHex">Pink</Value>
+      <Value name="9" type="Alias" ref="ChatColorsHex">Pink</Value>
+      <Value name="10" type="Alias" ref="ChatColorsHex">Yellow</Value>
+      <Value name="11" type="Alias" ref="ChatColorsHex">Dark Yellow</Value>
+      <Value name="12" type="Alias" ref="ChatColorsHex">Grey</Value>
+      <Value name="13" type="Alias" ref="ChatColorsHex">Turquoise</Value>
+      <Value name="14" type="Alias" ref="ChatColorsHex">Light Blue</Value>
+      <Value name="15" type="Alias" ref="ChatColorsHex">Red</Value>
+      <Value name="16" type="Alias" ref="ChatColorsHex">Green</Value>
+      <Value name="17" type="Alias" ref="ChatColorsHex">Blue</Value>
+      <Value name="18" type="Alias" ref="ChatColorsHex">Orange</Value>
+      <Value name="19" type="Alias" ref="ChatColorsHex">Yellow</Value>
+      <Value name="20" type="Alias" ref="ChatColorsHex">Green</Value>
+      <Value name="21" type="Alias" ref="ChatColorsHex">Red</Value>
+      <Value name="22" type="Alias" ref="ChatColorsHex">Light Red</Value>
+      <Value name="23" type="Alias" ref="ChatColorsHex">Green</Value>
+      <Value name="24" type="Alias" ref="ChatColorsHex">Green</Value>
+      <Value name="25" type="Alias" ref="ChatColorsHex">Green</Value>
+      <Value name="26" type="Alias" ref="ChatColorsHex">Red</Value>
+      <Value name="27" type="Alias" ref="ChatColorsHex">Light Blue</Value>
+      <Value name="28" type="Alias" ref="ChatColorsHex">Light Blue</Value>
+      <Value name="29" type="Alias" ref="ChatColorsHex">Light Blue</Value>
+      <Value name="30" type="Alias" ref="ChatColorsHex">Light Blue</Value>
+      <Value name="31" type="Alias" ref="ChatColorsHex">Yellow</Value>
+    </Reference>
+    <Reference name="ChatClasses">
+      <Value name="System" type="Int">0</Value>
+      <Value name="Open" type="Int">2</Value>
+      <Value name="Tell In" type="Int">3</Value>
+      <Value name="Tell Out" type="Int">4</Value>
+      <Value name="Error" type="Int">26</Value>
+      <Value name="Rare" type="Int">5</Value>
+      <Value name="Maintenance" type="Int">5</Value>
+      <Value name="Impact Damage" type="Int">6</Value>
+      <Value name="Spells" type="Int">7</Value>
+      <Value name="Vitae" type="Int">7</Value>
+      <Value name="Lifestone" type="Int">7</Value>
+      <Value name="Covassal" type="Int">10</Value>
+      <Value name="Vassal In" type="Int">10</Value>
+      <Value name="Patron In" type="Int">10</Value>
+      <Value name="Allegiance Broadcast" type="Int">10</Value>
+      <Value name="Patron Out" type="Int">11</Value>
+      <Value name="Vassal Out" type="Int">11</Value>
+      <Value name="Emote" type="Int">12</Value>
+      <Value name="Level" type="Int">13</Value>
+      <Value name="Stat Raise" type="Int">13</Value>
+      <Value name="Spell Words" type="Int">17</Value>
+      <Value name="Allegiance" type="Int">18</Value>
+      <Value name="Fellowship" type="Int">19</Value>
+      <Value name="Attack In" type="Int">21</Value>
+      <Value name="Attack Out" type="Int">22</Value>
+      <Value name="Recall" type="Int">23</Value>
+      <Value name="Tinker" type="Int">24</Value>
+      <Value name="General" type="Int">27</Value>
+      <Value name="Trade" type="Int">28</Value>
+      <Value name="LFG" type="Int">29</Value>
+      <Value name="Roleplay" type="Int">30</Value>
+    </Reference>
+    <Reference name="ChatWindows">
+      <Value name="Default" type="String">D</Value>
+      <Value name="Main" type="String">M</Value>
+      <Value name="Window1" type="String">1</Value>
+      <Value name="Window2" type="String">2</Value>
+      <Value name="Window3" type="String">3</Value>
+      <Value name="Window4" type="String">4</Value>
+      <Value name="Block" type="String">B</Value>
+    </Reference>
+    <Reference name="GUIColors">
+      <Value name="Highlight" type="Hex">80FFFF</Value>
+    </Reference>
+  </References>
+</refData>

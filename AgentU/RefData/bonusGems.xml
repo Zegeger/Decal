@@ -1,0 +1,13 @@
+<refData>
+  <References version="1.0.0">
+    <Reference name="BonusSpells">
+      <Value name="Asheron's Benediction" type="Int">3810</Value>
+      <Value name="Blackmoor's Favor" type="Int">3811</Value>
+      <Value name="Asheron's Lesser Benediction" type="Int">4024</Value>
+    </Reference>
+    <Reference name="BonusCooldown">
+      <Value name="Asheron's Benediction" type="Int">-32766</Value>
+      <Value name="Blackmoor's Favor" type="Int">-32765</Value>
+    </Reference>
+  </References>
+</refData>

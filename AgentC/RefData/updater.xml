@@ -1,0 +1,9 @@
+<refData>
+  <References version="1.0.0">
+    <Reference name="Updater">
+      <Value name="URL" type="String">http://www.zegeger.net/decalupdater/decalUpdater.php</Value>
+      <Value name="AutoUpdate" type="Bool">true</Value>
+      <Value name="DownloadURL" type="String">http://www.zegeger.net/ac/decal/agentz/</Value>
+    </Reference>
+  </References>
+</refData>

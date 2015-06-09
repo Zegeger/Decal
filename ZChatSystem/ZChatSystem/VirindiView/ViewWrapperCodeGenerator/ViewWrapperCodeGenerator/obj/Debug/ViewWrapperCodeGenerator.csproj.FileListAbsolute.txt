@@ -1,0 +1,8 @@
+C:\Users\chris.tart.PEAK10\Documents\Programming\AgentC\AgentC\VirindiView\ViewWrapperCodeGenerator\ViewWrapperCodeGenerator\bin\Debug\ViewWrapperCodeGenerator.exe
+C:\Users\chris.tart.PEAK10\Documents\Programming\AgentC\AgentC\VirindiView\ViewWrapperCodeGenerator\ViewWrapperCodeGenerator\bin\Debug\ViewWrapperCodeGenerator.pdb
+C:\Users\chris.tart.PEAK10\Documents\Programming\AgentC\AgentC\VirindiView\ViewWrapperCodeGenerator\ViewWrapperCodeGenerator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\chris.tart.PEAK10\Documents\Programming\AgentC\AgentC\VirindiView\ViewWrapperCodeGenerator\ViewWrapperCodeGenerator\obj\Debug\ViewWrapperCodeGenerator.Form1.resources
+C:\Users\chris.tart.PEAK10\Documents\Programming\AgentC\AgentC\VirindiView\ViewWrapperCodeGenerator\ViewWrapperCodeGenerator\obj\Debug\ViewWrapperCodeGenerator.Properties.Resources.resources
+C:\Users\chris.tart.PEAK10\Documents\Programming\AgentC\AgentC\VirindiView\ViewWrapperCodeGenerator\ViewWrapperCodeGenerator\obj\Debug\ViewWrapperCodeGenerator.csproj.GenerateResource.Cache
+C:\Users\chris.tart.PEAK10\Documents\Programming\AgentC\AgentC\VirindiView\ViewWrapperCodeGenerator\ViewWrapperCodeGenerator\obj\Debug\ViewWrapperCodeGenerator.exe
+C:\Users\chris.tart.PEAK10\Documents\Programming\AgentC\AgentC\VirindiView\ViewWrapperCodeGenerator\ViewWrapperCodeGenerator\obj\Debug\ViewWrapperCodeGenerator.pdb

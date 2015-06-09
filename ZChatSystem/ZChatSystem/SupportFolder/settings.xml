@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ZChatSystem>
+  <Settings>
+    <Logging tracingon="True" />
+  </Settings>
+  <OrderInfo>
+    <MessageOrder>
+    </MessageOrder>
+    <ColorOrder>
+    </ColorOrder>
+    <WindowOrder>
+    </WindowOrder>
+  </OrderInfo>
+</ZChatSystem>

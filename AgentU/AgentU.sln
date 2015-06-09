@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgentU", "AgentU\AgentU.csproj", "{A7A56399-C868-48F9-88F0-446AC9C90E1E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "AgentUSetup", "AgentUSetup\AgentUSetup.vdproj", "{6999D328-EA72-49A6-B56D-7AF05B8722DA}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://zegeger.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AgentU\\AgentU.csproj
+		SccProjectName1 = AgentU
+		SccLocalPath1 = AgentU
+		SccProjectUniqueName2 = AgentUSetup\\AgentUSetup.vdproj
+		SccProjectName2 = AgentUSetup
+		SccLocalPath2 = AgentUSetup
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7A56399-C868-48F9-88F0-446AC9C90E1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7A56399-C868-48F9-88F0-446AC9C90E1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7A56399-C868-48F9-88F0-446AC9C90E1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7A56399-C868-48F9-88F0-446AC9C90E1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6999D328-EA72-49A6-B56D-7AF05B8722DA}.Debug|Any CPU.ActiveCfg = Debug
+		{6999D328-EA72-49A6-B56D-7AF05B8722DA}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

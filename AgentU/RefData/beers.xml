@@ -1,0 +1,12 @@
+<refData>
+  <References version="1.0.0">
+    <Reference name="BeerSpells">
+      <Value name="3530" type="String">KETNANEYE</Value>
+      <Value name="3533" type="String">BRIGHTEYE</Value>
+      <Value name="3531" type="String">BOBOQUICK</Value>
+      <Value name="3864" type="String">ZONGOFIST</Value>
+      <Value name="3862" type="String">RAOULPRIDE</Value>
+      <Value name="3863" type="String">HUNTERHARD</Value>
+    </Reference>
+  </References>
+</refData>

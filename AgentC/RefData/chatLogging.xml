@@ -1,0 +1,143 @@
+<refData>
+  <References version="1.0.0">
+    <Reference name="LogTypes">
+      <Value name="Open Chat" type="Int">1</Value>
+      <Value name="Tells" type="Int">2</Value>
+      <Value name="Fellowship" type="Int">3</Value>
+      <Value name="Patron/Covassal" type="Int">4</Value>
+      <Value name="Vassal" type="Int">5</Value>
+      <Value name="Allegiance" type="Int">6</Value>
+      <Value name="Channels" type="Int">7</Value>
+      <Value name="Magic" type="Int">8</Value>
+      <Value name="Spellwords" type="Int">9</Value>
+      <Value name="Combat" type="Int">10</Value>
+      <Value name="System" type="Int">11</Value>
+      <Value name="Recalls" type="Int">12</Value>
+      <Value name="Tinkers" type="Int">13</Value>
+      <Value name="Rares" type="Int">14</Value>
+      <Value name="Stat Raises" type="Int">15</Value>
+      <Value name="Level" type="Int">16</Value>
+      <Value name="Vitae" type="Int">17</Value>
+      <Value name="AgentZ" type="Int">1000</Value>
+      <Value name="Other" type="Int">0</Value>
+    </Reference>
+    <Reference name="LogClassRules">
+      <Value name="RuleXML" type="XML">
+        <Rules>
+          <Rule ReturnValue="%%LogTypes%Open Chat%%">
+            <Any>
+              <IntegerTest Index="0" Match="%%ChatClasses%Open%%" Type="EQ" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Emote%%" Type="EQ" />
+            </Any>
+          </Rule>
+          <Rule ReturnValue="%%LogTypes%Tells%%">
+            <Any>
+              <IntegerTest Index="0" Match="%%ChatClasses%Tell In%%" Type="EQ" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Tell Out%%" Type="EQ" />
+            </Any>
+          </Rule>
+          <Rule ReturnValue="%%LogTypes%Fellowship%%">
+            <Any>
+              <IntegerTest Index="0" Match="%%ChatClasses%Fellowship%%" Type="EQ" />
+            </Any>
+          </Rule>
+          <Rule ReturnValue="%%LogTypes%Patron/Covassal%%">
+            <Any>
+              <All>
+                <StringTest Index="1" Match="Your patron" Type="SW" />
+                <IntegerTest Index="0" Match="%%ChatClasses%Patron In%%" Type="EQ" />
+              </All>
+              <All>
+                <StringTest Index="1" Match="You say to your Patron" Type="SW" />
+                <IntegerTest Index="0" Match="%%ChatClasses%Patron Out%%" Type="EQ" />
+              </All>
+              <All>
+                <StringTest Index="1" Match="[Co-Vassals]" Type="SW" />
+                <IntegerTest Index="0" Match="%%ChatClasses%Covassal%%" Type="EQ" />
+              </All>
+            </Any>
+          </Rule>
+          <Rule ReturnValue="%%LogTypes%Vassal%%">
+            <Any>
+              <All>
+                <StringTest Index="1" Match="Your vassal" Type="SW" />
+                <IntegerTest Index="0" Match="%%ChatClasses%Vassal In%%" Type="EQ" />
+              </All>
+              <All>
+                <StringTest Index="1" Match="You say to your Vassals" Type="SW" />
+                <IntegerTest Index="0" Match="%%ChatClasses%Vassal Out%%" Type="EQ" />
+              </All>
+            </Any>
+          </Rule>
+          <Rule ReturnValue="%%LogTypes%Allegiance%%">
+            <Any>
+              <IntegerTest Index="0" Match="%%ChatClasses%Allegiance%%" Type="EQ" />
+            </Any>
+          </Rule>
+          <Rule ReturnValue="%%LogTypes%Channels%%">
+            <Any>
+              <IntegerTest Index="0" Match="%%ChatClasses%General%%" Type="EQ" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Trade%%" Type="EQ" />
+              <IntegerTest Index="0" Match="%%ChatClasses%LFG%%" Type="EQ" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Roleplay%%" Type="EQ" />
+            </Any>
+          </Rule>
+          <Rule ReturnValue="%%LogTypes%Vitae%%">
+            <All>
+              <StringTest Index="1" Match="Your experience has reduced your Vitae penalty!" Type="SW" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Vitae%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="%%LogTypes%Magic%%">
+            <Any>
+              <IntegerTest Index="0" Match="%%ChatClasses%Spells%%" Type="EQ" />
+            </Any>
+          </Rule>
+          <Rule ReturnValue="%%LogTypes%Spellwords%%">
+            <Any>
+              <IntegerTest Index="0" Match="%%ChatClasses%Spell Words%%" Type="EQ" />
+            </Any>
+          </Rule>
+          <Rule ReturnValue="%%LogTypes%Combat%%">
+            <Any>
+              <IntegerTest Index="0" Match="%%ChatClasses%Attack In%%" Type="EQ" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Attack Out%%" Type="EQ" />
+            </Any>
+          </Rule>
+          <Rule ReturnValue="%%LogTypes%System%%">
+            <Any>
+              <IntegerTest Index="0" Match="%%ChatClasses%System%%" Type="EQ" />
+            </Any>
+          </Rule>
+          <Rule ReturnValue="%%LogTypes%Recalls%%">
+            <Any>
+              <IntegerTest Index="0" Match="%%ChatClasses%Recall%%" Type="EQ" />
+            </Any>
+          </Rule>
+          <Rule ReturnValue="%%LogTypes%Tinkers%%">
+            <Any>
+              <IntegerTest Index="0" Match="%%ChatClasses%Tinker%%" Type="EQ" />
+            </Any>
+          </Rule>
+          <Rule ReturnValue="%%LogTypes%Rares%%">
+            <All>
+              <StringTest Index="1" Match=".*has discovered.*" Type="RX" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Rare%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="%%LogTypes%Stat Raises%%">
+            <All>
+              <StringTest Index="1" Match="Your base.*is now.*" Type="RX" />
+              <IntegerTest Index="0" Match="%%ChatClasses%Stat Raise%%" Type="EQ" />
+            </All>
+          </Rule>
+          <Rule ReturnValue="%%LogTypes%Level%%">
+            <Any>
+              <IntegerTest Index="0" Match="%%ChatClasses%Level%%" Type="EQ" />
+            </Any>
+          </Rule>
+        </Rules>
+      </Value>
+    </Reference>
+  </References>
+</refData>

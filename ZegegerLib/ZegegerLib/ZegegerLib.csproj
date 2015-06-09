@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD83EBFA-A64E-4AD6-A965-22AE5A24ECC2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZegegerLib</RootNamespace>
+    <AssemblyName>ZegegerLib</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;VVS_WRAPPERS_PUBLIC,VVS_REFERENCED</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Zegeger.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Decal.Adapter">
+      <HintPath>..\..\..\..\..\Games\AC\Decal\Decal.Adapter.dll</HintPath>
+    </Reference>
+    <Reference Include="Decal.FileService">
+      <HintPath>..\..\..\..\..\Games\AC\Decal\Decal.FileService.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VirindiHotkeySystem, Version=1.0.0.6, Culture=neutral, PublicKeyToken=2b5d7e4bf12b590d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Games\AC\Decal Plugins\Virindi\VirindiHotkeySystem\VirindiHotkeySystem.dll</HintPath>
+    </Reference>
+    <Reference Include="VirindiViewService, Version=1.0.0.47, Culture=neutral, PublicKeyToken=2b5d7e4bf12b590d, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Games\AC\Decal Plugins\Virindi\VirindiViewService\VirindiViewService.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="ZChatSystem">
+      <HintPath>..\..\ZChatSystem\ZChatSystem\bin\Debug\ZChatSystem.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionQueue.cs" />
+    <Compile Include="Async.cs" />
+    <Compile Include="BlockID.cs" />
+    <Compile Include="CharData.cs" />
+    <Compile Include="CommandHandler.cs" />
+    <Compile Include="DecalList.cs" />
+    <Compile Include="EnchantmentTable.cs" />
+    <Compile Include="errorLogging.cs" />
+    <Compile Include="HotkeyWrapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RefData.cs" />
+    <Compile Include="SettingControls.cs" />
+    <Compile Include="SettingProfile.cs" />
+    <Compile Include="SoundManager.cs" />
+    <Compile Include="TestEngine.cs" />
+    <Compile Include="Updater.cs" />
+    <Compile Include="Uploader.cs" />
+    <Compile Include="VirtualKeyboard.cs" />
+    <Compile Include="VVS\ViewSystemSelector.cs" />
+    <Compile Include="VVS\Wrapper.cs" />
+    <Compile Include="VVS\Wrapper_Decal.cs" />
+    <Compile Include="VVS\Wrapper_MyHuds.cs" />
+    <Compile Include="VVS\Wrapper_WireupHelper.cs" />
+    <Compile Include="ZChatWrapper.cs" />
+    <Compile Include="ZTimer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Decal">
+      <Guid>{FF7F5F6D-34E0-4B6F-B3BB-8141DE2EF732}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Zegeger.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

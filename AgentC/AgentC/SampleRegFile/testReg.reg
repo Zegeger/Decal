@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Decal\Plugins\{35AC7973-E0CA-4fb0-827C-652CF6D271D7}] 
+@="AgentC" 
+"Assembly"="AgentC.dll" 
+"Object"="Zegeger.Decal.Plugins.AgentC.PluginCore" 
+"Path"="C:\\Users\\chris.tart\\Programming\\AgentC\\AgentC\\bin\\Debug" 
+"Surrogate"="{71A69713-6593-47EC-0002-0000000DECA1}"

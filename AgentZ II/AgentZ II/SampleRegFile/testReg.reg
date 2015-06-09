@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Decal\Plugins\{F49565E4-592B-4D1A-99BB-5DE7F130B559}] 
+@="AgentZ II" 
+"Assembly"="AgentZ II.dll" 
+"Object"="Zegeger.Decal.Plugins.AgentZ_II.PluginCore" 
+"Path"="C:\\Users\\chris.tart\\Programming\\AgentZ II\\AgentZ II\\bin\\Debug" 
+"Surrogate"="{71A69713-6593-47EC-0002-0000000DECA1}"

@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<view icon="11539" title="AgentU" width="240" height="236">
+		<control progid="DecalControls.FixedLayout" clipped="">
+			<control progid="DecalControls.Notebook" name="nbchat" left="0" top="0" width="240" height="236">
+			<page label="Items">
+				<control progid="DecalControls.FixedLayout" clipped="">
+					<control progid="DecalControls.Checkbox" name="Fill_Mana" left="8" top="24" width="184" height="16" text="Use Mana Stones / Charges &lt; $"/>
+					<control progid="DecalControls.Checkbox" name="Use_Gems" left="8" top="4" width="144" height="16" text="Use Bonus Gems"/>
+					<control progid="DecalControls.Edit" name="Fill_Threshold" left="192" top="24" width="44" height="16" imageportalsrc="4726" fontface="Arial" fontsize="14" fontstyle="" text="50000"/>
+					<control progid="DecalControls.Checkbox" name="Use_Beers" left="8" top="64" width="168" height="16" text="Use a Beer When Timer &lt;"/>
+					<control progid="DecalControls.Edit" name="Beer_Timer" left="176" top="64" width="30" height="16" imageportalsrc="4726" text="120"/>
+					<control progid="DecalControls.StaticText" name="BeerSecLabel" left="208" top="64" width="22" height="16" text="Sec"/>
+					<control progid="DecalControls.Checkbox" name="Event_Start" left="10" top="174" width="222" height="16" text="Use items automatically in peace mode"/>
+					<control progid="DecalControls.Checkbox" name="Beer_Str" left="18" top="84" width="30" height="16" text="St"/>
+					<control progid="DecalControls.Checkbox" name="Beer_Coord" left="86" top="84" width="32" height="16" text="Co"/>
+					<control progid="DecalControls.Checkbox" name="Beer_Quick" left="120" top="84" width="32" height="16" text="Qu"/>
+					<control progid="DecalControls.Checkbox" name="Beer_End" left="50" top="84" width="32" height="16" text="En"/>
+					<control progid="DecalControls.Checkbox" name="Beer_Focus" left="158" top="84" width="34" height="16" text="Fo"/>
+					<control progid="DecalControls.Checkbox" name="Beer_Self" left="194" top="84" width="30" height="16" text="Se"/>
+					<control progid="DecalControls.Checkbox" name="Beer_Use_Check" left="18" top="104" width="166" height="16" text="Do not use beers if buff &lt;"/>
+					<control progid="DecalControls.Edit" name="Beer_Use_Timer" left="184" top="104" width="30" height="16" imageportalsrc="4726" text="120"/>
+					<control progid="DecalControls.StaticText" name="BeerSecLabel1" left="216" top="104" width="22" height="16" text="Sec"/>
+					<control progid="DecalControls.Checkbox" name="Dispell_DOT" left="8" top="44" width="184" height="16" text="Use Dispell Gem If DOT Tick &gt;"/>
+					<control progid="DecalControls.Edit" name="DOT_Damage" left="200" top="44" width="32" height="16" imageportalsrc="4726" text="100"/>
+					<control progid="DecalControls.Choice" name="Beer_Use_Spell" left="32" top="120" width="200" height="19"/>
+				</control>
+
+			</page>
+			<page label="Util">
+				<control progid="DecalControls.FixedLayout" clipped="">
+					<control progid="DecalControls.Checkbox" name="Level_SS" left="8" top="4" width="136" height="16" text="Screenshot on Level &gt;"/>
+					<control progid="DecalControls.Edit" name="Start_Level" left="152" top="4" width="28" height="16" imageportalsrc="4726" fontface="Arial" fontsize="14" fontstyle="" text="6"/>
+					<control progid="DecalControls.Checkbox" name="Logout_Timer" left="8" top="44" width="144" height="16" text="Extend Logout Timer"/>
+					<control progid="DecalControls.Checkbox" name="Status_Text" left="8" top="24" width="144" height="16" text="Remove Status Text"/>
+					<control progid="DecalControls.Checkbox" name="Show_Errors" left="136" top="24" width="96" height="16" text="Show Errors"/>
+					<control progid="DecalControls.StaticText" name="Util_lblVitalAlarm" left="8" top="100" width="80" height="16" fontface="Times New Roman" fontsize="14" fontstyle=" bold" text="Vital Alarm"/>
+					<control progid="DecalControls.Checkbox" name="Util_checkVitalHealthOn" left="8" top="116" width="56" height="19" text="Health"/>
+					<control progid="DecalControls.Edit" name="Util_txtVitalHealthPer" left="68" top="116" width="38" height="19" imageportalsrc="4726" text="0%"/>
+					<control progid="DecalControls.Choice" name="Util_cboVitalHealthSound" left="112" top="116" width="120" height="19"/>
+					<control progid="DecalControls.Checkbox" name="Util_checkVitalStaminaOn" left="8" top="138" width="64" height="19" text="Stamina"/>
+					<control progid="DecalControls.Edit" name="Util_txtVitalStaminaPer" left="68" top="138" width="38" height="19" imageportalsrc="4726" text="0%"/>
+					<control progid="DecalControls.Choice" name="Util_cboVitalStaminaSound" left="112" top="138" width="120" height="19"/>
+					<control progid="DecalControls.Checkbox" name="Util_checkVitalManaOn" left="8" top="160" width="56" height="19" text="Mana"/>
+					<control progid="DecalControls.Edit" name="Util_txtVitalManaPer" left="68" top="160" width="38" height="20" imageportalsrc="4726" text="0%"/>
+					<control progid="DecalControls.Choice" name="Util_cboVitalManaSound" left="112" top="160" width="120" height="19"/>
+				</control>
+
+			</page>
+			<page label="OneTouch">
+				<control progid="DecalControls.FixedLayout" clipped="">
+					<control progid="DecalControls.StaticText" name="Vitals_lblBlock" left="4" top="26" width="132" height="16" text="Block use if vital is &gt;"/>
+					<control progid="DecalControls.Slider" name="Vitals_sldrBlock" left="182" top="24" width="50" height="16" minimum="0" maximum="100" textcolor="0" vertical="0"/>
+					<control progid="DecalControls.Edit" name="Vitals_txtBlock" left="140" top="24" width="38" height="16" imageportalsrc="4726" text="100%"/>
+					<control progid="DecalControls.StaticText" name="Vitals_lblSuccess" left="4" top="46" width="132" height="16" text="Heal: Attempt success &gt;"/>
+					<control progid="DecalControls.Edit" name="Vitals_txtSuccess" left="140" top="44" width="38" height="16" imageportalsrc="4726" text="90%"/>
+					<control progid="DecalControls.Slider" name="Vitals_sldrSuccess" left="182" top="44" width="50" height="16" minimum="0" maximum="100" textcolor="0" vertical="0"/>
+					<control progid="DecalControls.StaticText" name="Vitals_lblCheap" left="4" top="66" width="132" height="16" text="Heal Cheapo: health &gt;"/>
+					<control progid="DecalControls.Edit" name="Vitals_txtCheap" left="140" top="64" width="38" height="16" imageportalsrc="4726" text="80%"/>
+					<control progid="DecalControls.Slider" name="Vitals_sldrCheap" left="182" top="64" width="50" height="16" minimum="0" maximum="100" textcolor="0" vertical="0"/>
+					<control progid="DecalControls.StaticText" name="Vitals_lblFallback" left="4" top="86" width="132" height="16" text="Fallback if success &lt;"/>
+					<control progid="DecalControls.Edit" name="Vitals_txtFallback" left="140" top="84" width="38" height="16" imageportalsrc="4726" text="75%"/>
+					<control progid="DecalControls.Slider" name="Vitals_sldrFallback" left="182" top="84" width="50" height="16" minimum="0" maximum="100" textcolor="0" vertical="0"/>
+					<control progid="DecalControls.StaticText" name="Vitals_lblExceptions" left="4" top="102" width="88" height="16" fontface="Times New Roman" fontsize="14" fontstyle=" bold" text="Exceptions"/>
+					<control progid="DecalControls.List" name="Vitals_listExceptions" left="4" top="118" width="230" height="54">
+						<column progid="DecalControls.TextColumn" name="ItemName" fixedwidth="188"/>
+						<column progid="DecalControls.IconColumn" name="ItemDelete" fixedwidth="20"/>
+					</control>
+					<control progid="DecalControls.Edit" name="Vitals_txtAddException" left="4" top="176" width="162" height="16" imageportalsrc="4726" text=""/>
+					<control progid="DecalControls.PushButton" name="Vitals_btnAddException" left="170" top="176" width="30" height="16" textcolor="16777215" text="Add"/>
+					<control progid="DecalControls.PushButton" name="Vitals_btnAddSelected" left="204" top="176" width="30" height="16" textcolor="16777215" text="Sel"/>
+					<control progid="DecalControls.Checkbox" name="Vitals_OneTouch_Enabled" left="4" top="4" width="132" height="16" text="One Touch Enabled"/>
+				</control>
+
+			</page>
+			<page label="Settings">
+				<control progid="DecalControls.FixedLayout" clipped="">
+					<control progid="DecalControls.Choice" name="Settings_Drop" left="8" top="32" width="208" height="24"/>
+					<control progid="DecalControls.Edit" name="Settings_Text" left="8" top="96" width="208" height="24" imageportalsrc="4726" text=""/>
+					<control progid="DecalControls.PushButton" name="Settings_Add" left="80" top="128" width="64" height="24" textcolor="16777215" text="Add"/>
+					<control progid="DecalControls.PushButton" name="Settings_Rename" left="152" top="128" width="64" height="24" textcolor="16777215" text="Rename"/>
+					<control progid="DecalControls.PushButton" name="Settings_Delete" left="80" top="64" width="64" height="24" textcolor="16777215" text="Delete"/>
+					<control progid="DecalControls.StaticText" name="Settings_Active" left="8" top="8" width="208" height="16" text=""/>
+					<control progid="DecalControls.PushButton" name="Settings_Load" left="152" top="64" width="64" height="24" textcolor="16777215" text="Load"/>
+				</control>
+
+			</page>
+			</control>
+
+		</control>
+
+</view>

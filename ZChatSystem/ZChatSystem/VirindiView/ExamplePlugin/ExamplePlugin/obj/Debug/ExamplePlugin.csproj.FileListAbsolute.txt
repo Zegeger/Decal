@@ -1,0 +1,10 @@
+C:\Users\chris.tart.PEAK10\Documents\Programming\AgentC\AgentC\VirindiView\ExamplePlugin\ExamplePlugin\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\chris.tart.PEAK10\Documents\Programming\AgentC\AgentC\VirindiView\ExamplePlugin\ExamplePlugin\bin\Debug\ExamplePlugin.dll
+C:\Users\chris.tart.PEAK10\Documents\Programming\AgentC\AgentC\VirindiView\ExamplePlugin\ExamplePlugin\bin\Debug\ExamplePlugin.pdb
+C:\Users\chris.tart.PEAK10\Documents\Programming\AgentC\AgentC\VirindiView\ExamplePlugin\ExamplePlugin\bin\Debug\Decal.Adapter.dll
+C:\Users\chris.tart.PEAK10\Documents\Programming\AgentC\AgentC\VirindiView\ExamplePlugin\ExamplePlugin\bin\Debug\VirindiViewService.dll
+C:\Users\chris.tart.PEAK10\Documents\Programming\AgentC\AgentC\VirindiView\ExamplePlugin\ExamplePlugin\bin\Debug\WebControlWrapper.dll
+C:\Users\chris.tart.PEAK10\Documents\Programming\AgentC\AgentC\VirindiView\ExamplePlugin\ExamplePlugin\bin\Debug\System.Data.SQLite.dll
+C:\Users\chris.tart.PEAK10\Documents\Programming\AgentC\AgentC\VirindiView\ExamplePlugin\ExamplePlugin\bin\Debug\Decal.Adapter.xml
+C:\Users\chris.tart.PEAK10\Documents\Programming\AgentC\AgentC\VirindiView\ExamplePlugin\ExamplePlugin\obj\Debug\ExamplePlugin.dll
+C:\Users\chris.tart.PEAK10\Documents\Programming\AgentC\AgentC\VirindiView\ExamplePlugin\ExamplePlugin\obj\Debug\ExamplePlugin.pdb

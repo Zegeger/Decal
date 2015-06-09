@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZChatSystem", "ZChatSystem\ZChatSystem.csproj", "{395C4F3E-1B90-4754-A752-4B7BFADD228E}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ZChatSystemCOMWrapper", "ZChatSystemCOMWrapper\ZChatSystemCOMWrapper.vbproj", "{C9C7DD2A-E3A3-4A8E-9D23-1999ADCCCAF2}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ZChatSystemSetup", "ZChatSystemSetup\ZChatSystemSetup.vdproj", "{99076A39-C11C-4826-B17B-F413521F6459}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://zegeger.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ZChatSystem\\ZChatSystem.csproj
+		SccProjectName1 = ZChatSystem
+		SccLocalPath1 = ZChatSystem
+		SccProjectUniqueName2 = ZChatSystemCOMWrapper\\ZChatSystemCOMWrapper.vbproj
+		SccProjectName2 = ZChatSystemCOMWrapper
+		SccLocalPath2 = ZChatSystemCOMWrapper
+		SccProjectUniqueName3 = ZChatSystemSetup\\ZChatSystemSetup.vdproj
+		SccProjectName3 = ZChatSystemSetup
+		SccLocalPath3 = ZChatSystemSetup
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{395C4F3E-1B90-4754-A752-4B7BFADD228E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{395C4F3E-1B90-4754-A752-4B7BFADD228E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{395C4F3E-1B90-4754-A752-4B7BFADD228E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{395C4F3E-1B90-4754-A752-4B7BFADD228E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9C7DD2A-E3A3-4A8E-9D23-1999ADCCCAF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9C7DD2A-E3A3-4A8E-9D23-1999ADCCCAF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9C7DD2A-E3A3-4A8E-9D23-1999ADCCCAF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9C7DD2A-E3A3-4A8E-9D23-1999ADCCCAF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99076A39-C11C-4826-B17B-F413521F6459}.Debug|Any CPU.ActiveCfg = Debug
+		{99076A39-C11C-4826-B17B-F413521F6459}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

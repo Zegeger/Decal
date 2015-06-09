@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<view icon="13248" title="ZChatSystem" width="230" height="236">
+		<control progid="DecalControls.FixedLayout" clipped="">
+			<control progid="DecalControls.Notebook" name="Notebook1" left="0" top="0" width="232" height="208">
+			<page label="Message">
+				<control progid="DecalControls.FixedLayout" clipped="">
+					<control progid="DecalControls.List" name="Message_List" left="0" top="0" width="232" height="188">
+						<column progid="DecalControls.CheckColumn" fixedwidth="20"/>
+						<column progid="DecalControls.TextColumn" fixedwidth="140"/>
+						<column progid="DecalControls.IconColumn" fixedwidth="16"/>
+						<column progid="DecalControls.IconColumn" fixedwidth="16"/>
+					</control>
+				</control>
+
+			</page>
+			<page label="Color">
+				<control progid="DecalControls.FixedLayout" clipped="">
+					<control progid="DecalControls.List" name="Color_List" left="0" top="0" width="232" height="188">
+						<column progid="DecalControls.CheckColumn" fixedwidth="20"/>
+						<column progid="DecalControls.TextColumn" fixedwidth="140"/>
+						<column progid="DecalControls.IconColumn" fixedwidth="16"/>
+						<column progid="DecalControls.IconColumn" fixedwidth="16"/>
+					</control>
+				</control>
+
+			</page>
+			<page label="Window">
+				<control progid="DecalControls.FixedLayout" clipped="">
+					<control progid="DecalControls.List" name="Window_List" left="0" top="0" width="232" height="188">
+						<column progid="DecalControls.CheckColumn" fixedwidth="20"/>
+						<column progid="DecalControls.TextColumn" fixedwidth="140"/>
+						<column progid="DecalControls.IconColumn" fixedwidth="16"/>
+						<column progid="DecalControls.IconColumn" fixedwidth="16"/>
+					</control>
+				</control>
+
+			</page>
+			</control>
+
+		</control>
+
+</view>

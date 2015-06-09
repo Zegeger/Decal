@@ -1,0 +1,71 @@
+Plugin Preview for plugin developers
+
+I began looking at converting my plugins to .NET and in the process decided I wanted to split some functionality off into seperate plugins.  The problem I realized was with the limitations of Decal and chat.  To get around that I developed a new plugin to mediate the chat and I wanted to see if other plugin authors would find it useful to use as well.
+
+This plugin has the the following features:
+- Allow multiple plugins to modify incoming chat without creating duplicate chat lines (Reimpliment ChatBoxMessage Event)
+- Allow plugins to recieve chat output from other plugins (Reimpliment WriteToChat)
+- Allow plugins to be notified of the final result of a message
+
+In addition it has some benefits:
+- Allow a plugin to change the color of a message without changing its output windows
+- Allow plugins to register their own chat types for identification and preset defaults
+
+
+Its easiest to show with some example code:
+
+private ZChatSystem.IDToken ZChatID;
+private ZChatSystem.ChatType NormalType;
+
+ZChatSystem.Service.ChatBoxMessage += new ZChatSystem.ChatBoxMessageEvent(Service_ChatBoxMessage);
+ZChatSystem.Service.ChatTextComplete +=new ZChatSystem.ChatTextCompleteEvent(Service_ChatTextComplete);
+
+ZChatID = ZChatSystem.Service.RegisterPlugin("AgentC");
+NormalType = ZChatSystem.Service.CreateChatType(ZChatID, 11, false, true, true, false, false);
+           
+void Service_ChatBoxMessage(ZChatSystem.ChatBoxMessageEventArgs e)
+{
+    try
+    {
+        e.PluginID = ZChatID;
+        if (e.Text.Contains("Zelda"))
+        {
+            e.Color = 9;
+            e.Window.ForceDefault();
+            e.ReplaceMessage("Zelda", "Princess Zelda"); // Replace some text with additional text
+            e.PrependMessage("<Prepend>"); // Prepend Text
+            e.AppendMessage(" (Something Was Added)"); // Append Text
+            e.AppendMessage(" Another thing was added");
+        }
+        if (e.Text.Contains("You say,"))
+        {
+            e.Color = 8;
+        }
+        if (e.Text.Contains("11.1"))
+        {
+            e.ReplaceMessage("11.1", "<null>");
+        }
+        if (e.Text.Contains("Mario"))
+        {
+            e.Color = 7;
+            e.Window.SetWindows(true, true, true, true, true); // Output to all windows.
+            e.SubstituteMessage("Mario goes to all windows!"); // Replaces entire message with a new message.
+        }
+	if (e.Text.Contains("Luigi"))
+        {
+            e.Window.BlockAll();  //Block all text for Luigi
+        }
+    }
+    catch (Exception ex)
+    {
+        errorLogging.LogError(errorLogFile, ex);
+    }
+}
+
+void  Service_ChatTextComplete(ZChatSystem.ChatTextCompleteEventArgs e)
+{
+        Logging.LogMessage(e.Text);
+}
+
+ZChatSystem.Service.WriteToChat("Message", 22);
+ZChatSystem.Service.WriteToChat("Message", NormalType);

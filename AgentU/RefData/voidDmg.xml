@@ -1,0 +1,43 @@
+<refData>
+  <References version="1.0.0">
+    <Reference name="VoidSpellDamage">
+      <Value name="5337" type="Int">21</Value>
+      <Value name="5338" type="Int">26</Value>
+      <Value name="5339" type="Int">4</Value>
+      <Value name="5340" type="Int">7</Value>
+      <Value name="5341" type="Int">9</Value>
+      <Value name="5342" type="Int">11</Value>
+      <Value name="5343" type="Int">14</Value>
+      <Value name="5344" type="Int">17</Value>
+      <Value name="5387" type="Int">10</Value>
+      <Value name="5388" type="Int">29</Value>
+      <Value name="5389" type="Int">19</Value>
+      <Value name="5390" type="Int">24</Value>
+      <Value name="5391" type="Int">26</Value>
+      <Value name="5392" type="Int">36</Value>
+      <Value name="5393" type="Int">45</Value>
+      <Value name="5394" type="Int">56</Value>
+      <Value name="5395" type="Int">4</Value>
+      <Value name="5396" type="Int">7</Value>
+      <Value name="5397" type="Int">9</Value>
+      <Value name="5398" type="Int">11</Value>
+      <Value name="5399" type="Int">14</Value>
+      <Value name="5400" type="Int">17</Value>
+      <Value name="5401" type="Int">21</Value>
+      <Value name="5402" type="Int">26</Value>
+    </Reference>
+    <Reference name="VoidDOTEffects">
+      <Value name="Destructive Curse" type="Int">636</Value>
+      <Value name="Corrosion" type="Int">637</Value>
+      <Value name="Corruption" type="Int">638</Value>
+    </Reference>
+    <Reference name="DispelGems">
+      <Value name="Society Gem of Dispelling" type="Int">8</Value>
+      <Value name="Black Market Gem of Dispelling" type="Int">8</Value>
+      <Value name="Gem of Dispersal" type="Int">7</Value>
+      <Value name="Gem of Stillness" type="Int">7</Value>
+      <Value name="Gem of Purity" type="Int">6</Value>
+      <Value name="Gem of Clensing" type="Int">5</Value>
+    </Reference>
+  </References>
+</refData>
